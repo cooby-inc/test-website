@@ -20,26 +20,27 @@
 
     <!-- WELCOME
     ================================================== -->
-    <section class="pt-4 pt-md-11" style="background:url(assets/img/covers/cover-12_short.jpg); height: 420px;">
+    <section data-jarallax data-speed=".8" class="pt-8 pt-md-11 pb-8 pb-md-0" style="background:url(assets/img/covers/cover-12_short.jpg);">
       <div class="container">
         <div class="row align-items-center">
 
           <div class="col-12 col-md-5 col-lg-5 order-md-2">
-            <div class="img-skewed img-skewed-left" data-aos='fade-up'>
-
+            <div class="text-center img-skewed img-skewed-left mb-8 mb-md-0" data-aos='fade-up' data-aos-delay="100">
               <!-- Image -->
-              <img src="assets/img/line_account.png" class="screenshot img-fluid img-skewed-item" alt="Line官方帳號條碼">
-
+              <img src="assets/img/line_account.png"
+                   class="screenshot img-fluid img-skewed-item mw-md-100"
+                   alt="Line官方帳號條碼"
+                   data-aos="img-skewed-item-left"
+                   data-aos-delay="100">
             </div>
             <!-- Image -->
-
-
           </div>
-          <div class="col-12 col-md-7 col-lg-7 order-md-1" data-aos="fade-up" style="padding-bottom: 100px;">
+          <div class="col-12 col-md-7 col-lg-7 order-md-1" data-aos="fade-up">
 
             <!-- Heading -->
             <h1 class="display-3 text-center text-md-left">
-              <span class="text-white">Cooby 酷比</span><span class="text-white"> <span data-toggle="typed" data-options='{"strings": ["客管系統", "人脈工具", "保單管理"]}'></span></span>
+              <span class="text-white">Cooby 酷比</span>
+              <span class='text-white'data-toggle="typed" data-options='{"strings": ["客管系統", "人脈工具", "保單管理"]}'></span>
             </h1>
 
             <!-- Text -->
@@ -56,13 +57,14 @@
             </div>
 
           </div>
+
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
 
     <!-- ABOUT
     ================================================== -->
-    <section class="pt-8 pt-md-10" id="about">
+    <section class="pt-8 pt-md-10 px-2" id="about">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -143,7 +145,7 @@
 
     <!-- ABOUT
     ================================================== -->
-    <section id="product">
+    <section id="product" class='px-2 pb-4 pb-md-0'>
       <div class="container">
         <div class="row justify-content-between align-items-center">
           <div class="col-12 col-md-6 col-lg-5 order-md-2">
@@ -281,7 +283,7 @@
     <section class="bg-dark py-8 py-md-13">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
+          <div class="col-12 text-center">
 
             <!-- Preheading -->
             <h6 class="text-uppercase text-warning">與你最常用的軟體整合</h6>
@@ -293,7 +295,7 @@
 
             <!-- Text -->
             <p class="font-size-lg text-muted mb-9">
-              通訊、地圖、行事曆、保單系統，輕鬆串接
+              通訊、地圖、行事曆，輕鬆串接
             </p>
 
           </div>
@@ -303,7 +305,7 @@
 
             <!-- Icon -->
             <div class="icon icon-lg mb-4">
-              @@include("assets/img/brands/logomark/slack.svg")
+              <img style='height: 60px' src='assets/img/brands/logomark/line.png' class="img-fluid">
             </div>
 
             <!-- Heading -->
@@ -313,7 +315,7 @@
 
             <!-- Text -->
             <p class="text-muted mb-8">
-              整合資料
+              預設訊息、傳檔案
             </p>
 
           </div>
@@ -321,7 +323,7 @@
 
             <!-- Icon -->
             <div class="icon icon-lg mb-4">
-              @@include("assets/img/brands/logomark/mailchimp.svg")
+              @@include("assets/img/brands/logomark/google_map.svg")
             </div>
 
             <!-- Heading -->
@@ -339,7 +341,7 @@
 
             <!-- Icon -->
             <div class="icon icon-lg mb-4">
-              @@include("assets/img/brands/logomark/dropbox.svg")
+              @@include("assets/img/brands/logomark/google_calendar.svg")
             </div>
 
             <!-- Heading -->
@@ -357,7 +359,7 @@
 
             <!-- Icon -->
             <div class="icon icon-lg mb-4">
-              @@include("assets/img/brands/logomark/google-drive.svg")
+              @@include("assets/img/brands/logomark/contacts-ios.svg")
             </div>
 
             <!-- Heading -->
@@ -367,7 +369,7 @@
 
             <!-- Text -->
             <p class="text-muted mb-8 mb-lg-0">
-              自動輸入同步客戶資料
+              自動從通訊錄輸入客戶資料
             </p>
 
           </div>
@@ -375,7 +377,7 @@
 
             <!-- Icon -->
             <div class="icon icon-lg mb-4">
-              @@include("assets/img/brands/logomark/google-ad-manager.svg")
+              @@include("assets/img/brands/logomark/excel.svg")
             </div>
 
             <!-- Heading -->
@@ -385,7 +387,7 @@
 
             <!-- Text -->
             <p class="text-muted mb-8 mb-md-0">
-              透過CSV自動匯入客戶資料
+              從Excel自動匯入客戶資料
             </p>
 
           </div>
@@ -424,7 +426,7 @@
 
             <!-- Text -->
             <p class="font-size-lg text-gray-700 mb-6">
-              Cooby 不只是產品，而是服務。
+              Cooby 提供的不只是產品，更是服務。
             </p>
           </div>
         </div>
@@ -437,12 +439,12 @@
 
             <!-- Heading -->
             <h3>
-              親切專業客戶服務Line、電話
+              客服：親切專業客戶服務的Line專線
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0">
-              Landkit is built to make your life easier. Variables, build tooling, documentation, and reusable components.
+              我們理解上手軟體需要幫助，所以提供接溝通的管道，讓你可以詢問任何操作或功能的問題，甚至與我們直接討論你的反饋
             </p>
 
           </div>
@@ -460,7 +462,7 @@
 
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0">
-              找話題、開發需求、排定聯絡、活動量管理，我們幫你
+              業務需要培訓，從前人經驗中學習。讓老手教你找話題、開發需求、排定聯絡、活動量管理等，你幫業務成功，我們幫你成功。
             </p>
 
           </div>
@@ -483,7 +485,7 @@
 
             <!-- Text -->
             <p class="font-size-lg text-gray-700 mb-9">
-              我們喜歡讓用戶們直接評判產品，不用說就明白。
+              客戶認可是我們最大的資產，直接透過其他業務的口中聽到對 Cooby 的評價
             </p>
 
           </div>
@@ -654,35 +656,30 @@
     ================================================== -->
     <section class="pt-8 pt-md-11 bg-gradient-light" id="buy">
       <div class="container">
-        <div class="row align-items-center"  style="padding-bottom: 200px;">
-          <div class="col-12 col-md-7 col-lg-6" data-aos="fade-right">
+        <div class="row align-items-center pb-10 pb-md-12">
+          <div class="col-12 col-md-6 col-lg-6" data-aos="fade-right">
 
             <!-- Heading -->
             <h2>
-              開始使用
+              免費試用
             </h2>
 
             <!-- Text -->
             <p class="font-size-lg text-muted mb-6">
-              開放免費試用中 名額有限 立即搶先報名，已有南山、富邦、國泰等業務已登記搶先試用。
+              現在開放報名免費試用，名額有限，儘速報名。產品預計2020年8月上線，已有南山、富邦、國泰以及各保經代業務登記。欲報名請加入Line官方帳號。
             </p>
             <!-- Buttons -->
-            <div class="text-center text-md-left">
+            <div class="text-center text-md-left pb-8">
               <a href="https://lin.ee/4WscYE4Cq" class="btn btn-primary shadow lift mr-1">
                 加入 Line 官方帳號 <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
               </a>
             </div>
-
-
           </div>
-          <div class="col-12 col-md-5 col-lg-6" style="padding-left: 150px">
 
-            <div class="w-md-100 w-lg-75 text-center" data-aos="fade-left">
-
-
+          <div class="col-12 col-md-6 col-lg-6 pl-0 pl-md-10">
+            <div class="w-md-75 w-lg-75 text-center" data-aos="fade-left">
                 <!-- Image -->
                 <img src="assets/img/line_account.png" class="img-fluid" alt="Line官方帳號條碼">
-
             </div>
 
           </div>
@@ -709,7 +706,7 @@
           <div class="col-12 col-md-12 col-lg-12 text-center">
             <!-- Badge -->
             <span class="badge badge-pill badge-gray-700-soft mb-4">
-              <span class="h6 font-weight-bold text-uppercase">問答集</span>
+              <span class="h6 font-weight-bold text-uppercase">心中有疑惑？</span>
             </span>
 
             <!-- Heading -->
