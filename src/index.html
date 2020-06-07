@@ -7,9 +7,6 @@
   </head>
   <body>
 
-    <!-- MODALS
-    ================================================== -->
-    @@include("partials/modals.html")
 
     <!-- NAVBAR
     ================================================== -->
@@ -471,32 +468,25 @@
       </div> <!-- / .container -->
     </section>
 
-    <!-- CASE STUDIES
+
+    <!-- CASE STUDIES (CAROUSEL)
     ================================================== -->
-    <section class="pt-10" id='testimonial'>
+    <!-- THIS SHOULD BE ADDED AFTER THE APP IS READY -->
+    <section class="pt-10 d-none" id='testimonial'>
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-
+          <div class="col-12 text-center">
             <!-- Heading -->
             <h2 class="font-weight-bold">
               業務一致誠心推薦
             </h2>
-
             <!-- Text -->
             <p class="font-size-lg text-gray-700 mb-9">
-              客戶認可是我們最大的資產，直接透過其他業務的口中聽到對 Cooby 的評價
+              客戶認可是我們最大的資產，透過其他業務的口中聽到 Cooby 的評價
             </p>
-
           </div>
         </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
 
-    <!-- CASE STUDIES (CAROUSEL)
-    ================================================== -->
-    <section>
-      <div class="container">
         <div class="row">
           <div class="col-12">
 
@@ -515,7 +505,7 @@
 
                     <!-- Text -->
                     <p class="text-gray-700 mb-5">
-                      Uses Landkit to keep their remote teams from around the world in sync.
+                      Cooby 的使用非常直覺好用
                     </p>
 
                     <!-- Link -->
@@ -596,55 +586,7 @@
                 </div>
 
               </div>
-              <div class="col-12 col-md-5 col-lg-4">
-
-                <!-- Card -->
-                <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #CB2027;">
-                  <div class="card-body text-center">
-
-                    <!-- Icon -->
-                    <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #CB2027;">
-                      @@include("assets/img/brands/logotype/pinterest.svg")
-                    </div>
-
-
-                    <!-- Text -->
-                    <p class="text-gray-700 mb-5">
-                      Uses Landkit to share financial projections with their investors.
-                    </p>
-
-                    <!-- Link -->
-                    <a href="#!" style="color: #CB2027;">Read more</a>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-12 col-md-5 col-lg-4">
-
-                <!-- Card -->
-                <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #DA5988;">
-                  <div class="card-body text-center">
-
-                    <!-- Icon -->
-                    <div class="img-fluid mb-5 w-50 svg-shim mx-auto" style="color: #DA5988;">
-                      @@include("assets/img/brands/logotype/dribbble.svg")
-                    </div>
-
-                    <!-- Text -->
-                    <p class="text-gray-700 mb-5">
-                      Uses Landkit to plan their priorities for the company quarterly and annually.
-                    </p>
-
-                    <!-- Link -->
-                    <a href="#!" style="color: #DA5988;">Read more</a>
-
-                  </div>
-                </div>
-
-              </div>
             </div>
-
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
@@ -701,12 +643,12 @@
     <!-- FAQ
     ================================================== -->
     <section class="bg-dark" id='faq'>
-      <div class="container pt-11 pt-md-11">
+      <div class="container pt-11 pt-md-11 pb-8 pb-md-11">
         <div class="row">
           <div class="col-12 col-md-12 col-lg-12 text-center">
             <!-- Badge -->
             <span class="badge badge-pill badge-gray-700-soft mb-4">
-              <span class="h6 font-weight-bold text-uppercase">心中有疑惑？</span>
+              <span class="h6 font-weight-bold text-uppercase">解答你的任何問題</span>
             </span>
 
             <!-- Heading -->
@@ -716,7 +658,7 @@
 
             <!-- Text -->
             <p class="font-size-lg text-muted mb-6 mb-md-8">
-              Stop wasting time trying to do it the "right way" and build a site from scratch. Landkit is faster, easier, and you still have complete control.
+              我們知道，切換到新的客戶管理軟體是一個重大決定。我們致力於減少你的轉換心力與時間。
             </p>
           </div>
         </div>
@@ -737,12 +679,12 @@
 
                 <!-- Heading -->
                 <h4 class="text-white">
-                  Can I use Landkit for my clients?
+                  我已經有公司系統，還需要使用 Cooby 嗎？
                 </h4>
 
                 <!-- Text -->
                 <p class="text-muted mb-6 mb-md-8">
-                  Absolutely. The Bootstrap Themes license allows you to build a websites for personal use or for a client.
+                  需要！我們正是為補足公司內部系統不足而設計。Cooby 有手機版，強調使用流暢度與簡潔明瞭，你完全不需要再帶筆記本或使用iPhone通訊錄做管理，避免混雜個人資訊。
                 </p>
 
               </div>
@@ -761,12 +703,37 @@
 
                 <!-- Heading -->
                 <h4 class="text-white">
-                  Do I get free updates?
+                  我是保經代業務，正在考慮華佗、Kiwi或超級顧問等軟體，Cooby 有什麼好處？
+                </h4>
+
+                <!-- Text -->
+                <p class="text-muted mb-6 mb-md-8">
+                  Cooby 是市面上使用流暢度最高的客戶管理系統，歸功於團隊在矽谷學習到的產品設計與技術能力。我們推薦你使用 Cooby ，並搭配一套保單查詢管理系統輔助。如此軟體配置可以達到最高效率。
+
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- Item -->
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle badge-success">
+                <span>?</span>
+              </div>
+
+              <div class="ml-5">
+
+                <!-- Heading -->
+                <h4 class="text-white">
+                  Cooby 目前支援哪些平台？
                 </h4>
 
                 <!-- Text -->
                 <p class="text-muted mb-6 mb-md-0">
-                  Yes. We update all of our themes with each Bootstrap update, plus are constantly adding new components, pages, and features to our themes.
+                  預計在2020年8月推出 Cooby iOS 版本。Android 與網頁版已經規劃開始建置中。
                 </p>
 
               </div>
@@ -788,12 +755,12 @@
 
                 <!-- Heading -->
                 <h4 class="text-white">
-                  Is there a money back guarantee?
+                  Cooby 是免費的嗎？
                 </h4>
 
                 <!-- Text -->
                 <p class="text-muted mb-6 mb-md-8">
-                  Yup! Bootstrap Themes come with a satisfaction guarantee. Submit a return and get your money back.
+                  目前 Cooby 開放完全免費試用，未來依據使用量收費。我們收費原則是免費使用優先，讓你充分體驗過 Cooby 後，再決定是否增加使用量。<br>我們相信用戶的使用感受是最大的指標。你可以放心免費使用產品，確認喜歡後，再決定是否購買。
                 </p>
 
               </div>
@@ -812,12 +779,36 @@
 
                 <!-- Heading -->
                 <h4 class="text-white">
-                  Does it work with Rails? React? Laravel?
+                  我會拿到免費升級嗎？
+                </h4>
+
+                <!-- Text -->
+                <p class="text-muted mb-6 mb-md-8">
+                  會的！Cooby 架構於雲端，我們推出任何新 App 版本時，你可以透過 App Store 或 Google Play 免費更新，這是我們對用戶的承諾：我們會不斷改善更新產品回應你長期的支持。
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- Item -->
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle badge-success">
+                <span>?</span>
+              </div>
+
+              <div class="ml-5">
+
+                <!-- Heading -->
+                <h4 class="text-white">
+                  手動輸出客戶資料到 Cooby 很麻煩，有什麼辦法？
                 </h4>
 
                 <!-- Text -->
                 <p class="text-muted mb-6 mb-md-0">
-                  Yes. Landkit has basic CSS/JS files you can include. If you want to enable deeper customization, you can integrate it into your assets pipeline or build processes.
+                  我們會支援 iPhone 通訊錄與 Excel 自動輸入。有任何資料轉移上的問題，可以透過<a href='https://lin.ee/4WscYE4Cq' target='_blank'>Line聯繫客服</a>。
                 </p>
 
               </div>
@@ -826,20 +817,15 @@
 
           </div>
         </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-
-    <!-- CTA
-    ================================================== -->
-    <section class="py-8 py-md-11 bg-dark">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-
-
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-12 text-center mt-6 mt-md-8">
+            <!-- Text -->
+            <p class="font-size-lg text-muted">
+              還有問題嗎？歡迎到<a href='https://lin.ee/4WscYE4Cq' target='_blank'>Line客服專線</a>詢問你的問題。
+            </p>
           </div>
-        </div> <!-- / .row -->
+        </div>
+
       </div> <!-- / .container -->
     </section>
 
@@ -858,12 +844,12 @@
 
             <!-- Headin -->
             <h1 class="display-2">
-              我們團隊
+              團隊背景
             </h1>
 
             <!-- Text -->
             <p class="lead text-muted mb-7 mb-md-9">
-              Our focus is always on finding the best people to work with. Our bar is high, but you look ready to take on the challenge.
+              團隊由具數十年經驗的台灣保險業務顧問以及具美國矽谷 Facebook、Google、Intuit 經歷的工程、設計與產品經理組成
             </p>
 
           </div>
