@@ -30,7 +30,7 @@
 		</cc:Work>
 	</rdf:RDF>
 	<sfw  xmlns="&ns_sfw;">
-		<slices></slices>
+		<slices></slices
 		<sliceSourceBounds  bottomLeftOrigin="true" height="194.2" width="135.5" x="55.3" y="24.8"></sliceSourceBounds>
 	</sfw>
 </metadata>
