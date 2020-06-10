@@ -594,13 +594,13 @@
 
 
 
-    <!-- ABOUT
+    <!-- BUY
     ================================================== -->
     <section class="pt-8 pt-md-11 bg-gradient-light" id="buy">
       <div class="container">
-        <div class="row align-items-center pb-10 pb-md-12">
-          <div class="col-12 col-md-6 col-lg-6 pb-6" data-aos="fade-right">
+        <div class="row align-items-center">
 
+          <div class="col-12 col-md-6 col-lg-6 pb-6" data-aos="fade-right">
             <!-- Heading -->
             <h2>
               免費試用
@@ -620,8 +620,11 @@
               <small class='text-muted'>* 免費測試版具備核心功能，但沒有所有上述功能。進階功能將陸續推出。</small>
             </p>
           </div>
-
+          <div class="shape shape-blur-4 svg-shim text-gray-200" style='z-index:-1;'>
+            @@include("assets/img/shapes/blurs/blur-1.svg")
+          </div>
           <div class="col-12 col-md-6 col-lg-6 pl-0 pl-md-10">
+
             <div class="w-md-75 w-lg-75 text-center" data-aos="fade-left">
                 <!-- Image -->
                 <img src="assets/img/line_account.png" class="img-fluid" alt="Line官方帳號條碼">
@@ -632,20 +635,110 @@
       </div> <!-- / .container -->
     </section>
 
-    <!-- SHAPE
+
+    <!-- REGISTRATION
     ================================================== -->
-    <div class="position-relative mt-n8">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
-        @@include("assets/img/shapes/curves/curve-3.svg")
+    <section class="py-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+
+            <!-- Card -->
+            <div class="card card-border border-primary shadow-light-lg" data-jarallax-element="-40">
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-xl-11">
+
+                    <!-- Image -->
+                    <div class="text-center">
+                      <img src="assets/img/illustrations/illustration-6.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+                    </div>
+
+                    <!-- Heading -->
+                    <h2 class="font-weight-bold text-center mb-1">
+                      搶先報名，免費試用
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+                    </p>
+
+                    <!-- Form -->
+                    <form action="https://formspree.io/mwkrbvlw" method="POST">
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+
+                          <!-- Name -->
+                          <div class="form-label-group">
+                            <input type="text" class="form-control form-control-flush" name="registrationName" placeholder="姓名" required>
+                            <label for="registrationName">姓名</label>
+                          </div>
+
+                        </div>
+                        <div class="col-12 col-md-6">
+
+                          <!-- Telephone -->
+                          <div class="form-label-group">
+                            <input type="text" class="form-control form-control-flush" name="registrationPhone" placeholder="電話" required>
+                            <label for="registrationPhone">電話</label>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+
+                          <!-- Email -->
+                          <div class="form-label-group">
+                            <input type="email" class="form-control form-control-flush" name="registrationEmail" placeholder="Email" required>
+                            <label for="registrationEmail">Email</label>
+                          </div>
+
+                        </div>
+                        <div class="col-12 col-md-6">
+
+                          <!-- Company -->
+                          <div class="form-label-group">
+                            <input type="text" class="form-control form-control-flush" name="registrationCompany" placeholder="服務公司">
+                            <label for="registrationCompany">服務公司</label>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+
+                          <!-- Submit -->
+                          <button class="btn btn-block btn-primary mt-3 lift">
+                            報名
+                          </button>
+
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- CURVE
+    ================================================== -->
+    <div class="position-relative mt-n16">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        @@include("assets/img/shapes/curves/curve-1.svg")
       </div>
     </div>
 
 
-
-
     <!-- FAQ
     ================================================== -->
-    <section class="bg-dark" id='faq'>
+    <section class="bg-dark pt-16" id='faq'>
       <div class="container pt-11 pt-md-11 pb-8 pb-md-11">
         <div class="row">
           <div class="col-12 col-md-12 col-lg-12 text-center">
