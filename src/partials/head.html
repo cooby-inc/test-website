@@ -11,6 +11,14 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-58041205-5');
+
+  function clickTracking(category, label, numeric_value) {
+  gtag('event', "Click", {
+  'event_category': category,
+  'event_label': label,
+  'value': numeric_value
+  });
+}
 </script>
 
 
