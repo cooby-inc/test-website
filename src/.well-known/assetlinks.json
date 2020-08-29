@@ -1,0 +1,5 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.cooby.cooby_android",
+               "sha256_cert_fingerprints": ["B6:1C:39:EC:5E:F2:B4:07:46:0B:3A:41:00:74:40:69:23:64:26:74:1A:C9:1A:7C:8D:55:DF:64:52:0A:F6:E2"] }
+}]
