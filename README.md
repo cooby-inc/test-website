@@ -2,6 +2,17 @@
 
 Landkit Theme by Good Themes.
 
+### HOW TO USE ###
+
+To run locally,
+`gulp`
+
+To build into `dist` folder,
+`gulp build`
+
+To deploy to Github,
+`gulp deploy`
+
 ### Documentation ###
 
 Development documentation is available at `src/docs/index.html` (or `dist/docs/index.html` once you've compiled), or visit http://landkit.goodthemes.co/docs/index.html.
@@ -23,6 +34,5 @@ We provide an "unofficial" Landkit Figma file for you to play with. Learn more a
 ### Support ###
 
 Good Themes is happy to provide support for issues. Shoot us an email at support@goodthemes.co and we'll get you squared away.
-
 
 -
