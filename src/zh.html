@@ -10,7 +10,7 @@
 
     <!-- NAVBAR
     ================================================== -->
-    @@include("partials/navbar-en.html", {
+    @@include("partials/navbar-zh.html", {
     "classList": "navbar-light bg-white",
     "container": "container"
     })
@@ -26,7 +26,7 @@
             <div class="text-center img-skewed img-skewed-left mb-8 mb-md-0" data-aos='fade-up' data-aos-delay="100">
               <!-- Image -->
               <img src="assets/img/line_account.png"
-                   class="screenshot img-fluid img-skewed-item mw-md-100"
+                   class="screenshot img-fluid img-skewed-item mw-md-100 d-none"
                    alt="Line官方帳號條碼"
                    data-aos="img-skewed-item-left"
                    data-aos-delay="100">
@@ -37,18 +37,19 @@
 
             <!-- Heading -->
             <h1 class="display-4 text-center text-md-left">
-              <span class="text-white">Cooby, the best sales platform for </span><span class='text-white' data-toggle="typed" data-options='{"strings": ["Line", "Gmail"]}'></span>
+              <span class="text-white">Cooby 酷比 </span><span class='text-white' data-toggle="typed" data-options='{"strings": ["業務軟體", "提高業績利器"]}'></span>
             </h1>
 
             <!-- Text -->
             <p class="lead text-center text-white text-md-left mb-6 mb-lg-8">
-              Designed for professional services, agencies, insurance and real estate agents
+              專為服務導向的業務設計<br>
+              點擊下方開始免費試用
             </p>
 
             <!-- Buttons -->
             <div class="text-center text-md-left">
               <a href="https://line.me/R/ti/p/@995fliue" class="btn btn-primary shadow lift mr-1" onclick="signUpTracking('Line Follow', 'Top Header')">
-                Try Now!<i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+                立即試用 <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
               </a>
             </div>
 
@@ -74,15 +75,13 @@
             <br>
             <!-- Heading -->
             <h2 class="font-weight-bold">
-              First-ever CRM to <span class="text-primary">connect with your personal Line account
-                </span>
+              站在業務身旁，Cooby 知道<span class="text-primary">業務的需求</span>
             </h2>
 
             <!-- Text -->
-            <p class="font-size-lg text-muted mb-9">              
-              Do your clients use both Line and email to contact you and you don’t know where to find a specific message? Did you ever forget a task, a client request, a file shared somewhere, or a promise lost in messaging threads? <br>
-
-              Line message and email overload is a real issue. We built Cooby to solve just that. It’s simple, useful, and efficient. Made for salespeople, by salespeople ❤️
+            <p class="font-size-lg text-muted mb-9">
+              客戶用Line又用e-mail聯絡，回頭找訊息不知從何找起。Line 訊息過多滿載，你是否因此會忘記交辦事項、客戶要求、相關資料或附加檔案呢？ 
+              不用再煩惱了，我們專為以服務導向的業務設計了一套簡單、好用、高效率的客戶管理系統，Cooby 就如此誕生了。
             </p>
 
           </div>
@@ -99,12 +98,12 @@
 
             <!-- Heading -->
             <h3>
-              Professional Services
+              專業事務所
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0">
-              Lawyers, accountants, designers, architects, etc use Cooby to build customer database and view all contact histories across all channels in one place 
+              律師、會計師、設計師、建築師等建立客戶資料庫，一覽所有通聯紀錄
             </p>
 
           </div>
@@ -117,13 +116,12 @@
 
             <!-- Heading -->
             <h3>
-              Agencies and Consultancies
+              代理顧問公司
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0">
-              Marketing agencies, PR agencies, headhunters, etc work very closely with the clients and understand the needs of each client well. Cooby is perfect for elevating your customer relationships. 
-
+              廣告代理、人資顧問、公關公司等，與客戶密切配合，正需要使用Cooby提高客戶關係
             </p>
 
           </div>
@@ -136,12 +134,12 @@
 
             <!-- Heading -->
             <h3>
-              Relationship-based Sales
+              關係導向業務
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-0">
-              Insurance agents and real estate agents communicate virtually everything on messaging apps like Line. Cooby streamlines their workflow and tracks everything in messaging apps.
+              保險業務與房屋仲介，凡事皆在Line上與客戶溝通，正需要一套業務系統幫忙
             </p>
 
           </div>
@@ -177,12 +175,12 @@
 
             <!-- Heading -->
             <h1 class="text-white">
-              Customer Relationship Management Platform
+              客戶管理系統
             </h1>
 
             <!-- Text -->
-            <p class="font-size-lg text-muted mb-6">        
-              Cooby provides a simple, easy-to-use CRM platform that greatly simplifies the sales process and accelerates customer development. 
+            <p class="font-size-lg text-muted mb-6">
+              Cooby 提供最好上手的客戶管理系統，簡化繁瑣業務流程，加速開發客戶需求，更輕鬆地提高業績。
             </p>
 
             <!-- List -->
@@ -199,7 +197,7 @@
 
                   <!-- Text -->
                   <p class="text-success">
-                    Client Database
+                    客戶名單
                   </p>
 
                 </div>
@@ -213,7 +211,7 @@
                   </div>
 
                   <p class="text-success">
-                    Sales Activities (calls, emails, Line messages, notes, etc) 
+                    聯絡紀錄（電話、Email、Line 訊息、筆記等）
                   </p>
 
                 </div>
@@ -227,7 +225,7 @@
                   </div>
 
                   <p class="text-success">
-                    Notes
+                    客戶筆記
                   </p>
 
                 </div>
@@ -241,7 +239,7 @@
 
                   <!-- Text -->
                   <p class="text-success ">
-                    Tasks
+                    待辦事項
                   </p>
 
                 </div>
@@ -255,7 +253,7 @@
 
                   <!-- Text -->
                   <p class="text-success">
-                    Contact Suggestions 
+                    客戶聯絡推薦
                   </p>
 
                 </div>
@@ -271,7 +269,7 @@
 
                   <!-- Text -->
                   <p class="text-success">
-                    Periodic Reminders 
+                    客戶定期提醒
                   </p>
 
                 </div>
@@ -284,7 +282,7 @@
 
                   <!-- Text -->
                   <p class="text-success">
-                    Lightning Fast Search
+                    敏捷搜尋
                   </p>
 
                 </div>
@@ -297,7 +295,7 @@
 
                   <!-- Text -->
                   <p class="text-success">
-                    Automatic Import from Line
+                    自動匯入（Line 聯絡人）
                   </p>
 
                 </div>
@@ -310,7 +308,7 @@
 
                   <!-- Text -->
                   <p class="text-success">
-                    File Attachment
+                    附加檔案
                   </p>
 
                 </div>
@@ -465,13 +463,13 @@
         <div class="row">
           <div class="col-12 col-md-12"  data-aos="fade-up">
             <!-- Heading -->
-            <h1 class="font-weight-bold">
-              Deep integration with Line and Gmail
+            <h1>
+              與Line和Gmail完美結合
             </h1>
 
             <!-- Text -->
-            <p class="font-size-lg text-muted mb-6">
-              Ultra efficiency for Line and Gmail. You’ll never miss a deal. 
+            <p class="font-size-lg text-gray-700 mb-6">
+              追求極致高效率的Line與Gmail管理，永遠不再錯過任何成交機會！
             </p>
           </div>
         </div>
@@ -484,14 +482,14 @@
 
             <!-- Heading -->
             <h3>
-              Line Integration
+              Line結合
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0">
-              Never type in client info again. You can import all your Line contacts on your phone.<br>
-              With Cooby Assistant Line service, you can easily add a task or attach a file within Line. <br>
-              Web version is even more powerful. Cooby Chrome extension allows you to auto sync your chat history! 
+              從手機上直接自動匯入所有Line聯絡人，不用再手動輸入幾百個名字！<br>
+              透過貼心酷比小秘書Line OA帳號，在Line裡就可以直接新增待辦事項、附加檔案等。<br>
+              若使用網頁版更是強大，我們提供Chrome擴充套件，自動同步Line對話紀錄。
             </p>
 
           </div>
@@ -504,12 +502,13 @@
 
             <!-- Heading -->
             <h3>
-              Gmail Integration
+              Gmail結合
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0">
-              Send or receive an email from a new contact? Cooby Chrome extension helps you create a new contact from emails and record all email conversations. 
+              發信給新的聯絡人嗎？Cooby Chrome擴充套件幫你自動新增聯絡人，並且同步email收發紀錄。
+
             </p>
 
           </div>
@@ -662,22 +661,21 @@
           </div>
             <div class="col-12 col-md-6 order-md-1 pt-md-8">
             <!-- Heading -->
-              <h2 class="font-weight-bold">
-                 Try For Free
+              <h2>
+                 免費試用 test
               </h2>
 
             <!-- Text -->
               <p class="font-size-lg text-muted mb-6 ">
-                Let’s try out Cooby for free now! No credit card needed. After a quick signup, you can start experiencing Cooby’s powerful features. We know sales is hard, so just try it out and see if you like Cooby first. <br>
-                Join companies like Nanshan, Fubon, Cathay Pacific and hundreds of other salespeople using Cooby.
-
+                立刻開始免費試用！無須信用卡，十秒註冊完成後，即可以開始體驗Cooby的強大功能。我們知道做業務不容易，先免費試試看喜不喜歡Cooby再說。
+                各大公司的業務如南山、富邦、國泰等都報名試用，難道你不想試試嗎？
 
               </p>
             <!-- Buttons -->
               <div class="text-center text-md-left pb-2">
                 <a href="http://cooby.app.link/TzyN5HDQ0bb" class="btn btn-primary shadow lift mr-1" onclick="signUpTracking('Line Follow', 'Buy Section')">
                <!--<a href="https://line.me/R/ti/p/@995fliue" class="btn btn-primary shadow lift mr-1" onclick="signUpTracking('Line Follow', 'Buy Section')"><!--這裡要改成 goes to Web app signup flow-->
-                Try For Free Now!  <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+                立刻免費試用！ <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
               </a>
             </div>
           </div>
@@ -803,17 +801,17 @@
           <div class="col-12 col-md-12 col-lg-12 text-center" id='faq'>
             <!-- Badge -->
             <span class="badge badge-pill badge-gray-700-soft mb-4">
-              <span class="h6 font-weight-bold text-uppercase">All your answers here</span>
+              <span class="h6 font-weight-bold text-uppercase">解決你的任何問題</span>
             </span>
 
             <!-- Heading -->
             <h1 class="display-4 text-white">
-              Q&A
+              問答集
             </h1>
 
             <!-- Text -->
             <p class="font-size-lg text-muted mb-6 mb-md-8">
-              We know it’s a big decision to switch to a new CRM system, so we will help you with that. 
+              我們知道，切換到新的客戶管理軟體是一個重大決定。我們致力於減少你的轉換心力與時間。
             </p>
           </div>
         </div>
@@ -834,12 +832,12 @@
 
                 <!-- Heading -->
                 <h4 class="text-white">
-                  I already have the company internal system. Why Cooby? 
+                  我已經有公司系統，還需要使用 Cooby 嗎？
                 </h4>
 
                 <!-- Text -->
                 <p class="text-muted mb-6 mb-md-8">
-                  Because we are designed for sales individuals. For example, Cooby provides task management, potential lead database, and deep integration with Line and Gmail. You can view all chat history in one place. 
+                  需要！我們正是為補足公司內部系統不足而設計。Cooby 有手機版，強調幫助業務個人工作管理、待辦紀錄，紀錄潛在客戶名單，最重要的是通訊軟體(Line, Gmail)整合，一覽所有通聯紀錄。
                 </p>
 
               </div>
@@ -858,12 +856,12 @@
 
                 <!-- Heading -->
                 <h4 class="text-white">
-                  What platform does Cooby support?
+                  Cooby 目前支援哪些平台？
                 </h4>
 
                 <!-- Text -->
                 <p class="text-muted mb-6 mb-md-8">
-                  We will support iOS and Web platform by February, 2021.
+                  預計在2021年2月前推出 Cooby iOS 版本與網頁版。
                 </p>
 
               </div>
@@ -884,14 +882,13 @@
 
                 <!-- Heading -->
                 <h4 class="text-white">
-                  Is Cooby free? 
+                  Cooby 是免費的嗎？
                 </h4>
 
                 <!-- Text -->
                 <p class="text-muted mb-6 mb-md-8">
-                  It is! Cooby is free with small usage. We want to offer a free version so you can fully experience Cooby before deciding whether it’s a good fit for you or not. <br>
-                  We believe in user satisfaction. Explore the product fully and make sure you like it first. Then decide if you want to subscribe to higher-tiered plans.
-
+                  是的！Cooby 在低用量時為免費，高用量依用量計費。我們收費原則是免費使用優先，讓你充分體驗過 Cooby 後，再決定是否喜歡，並增加使用量。
+                  我們相信用戶的使用感受是最大的指標。你可以放心免費使用產品，確認喜歡後，再決定是否購買。
 
                 </p>
 
@@ -910,12 +907,12 @@
 
                 <!-- Heading -->
                 <h4 class="text-white">
-                  I don’t want to manually type in client data. What can I do? 
+                  手動輸出客戶資料到 Cooby 很麻煩，有什麼辦法？
                 </h4>
 
                 <!-- Text -->
                 <p class="text-muted mb-6 mb-md-8">
-                  Look no further! We support contact import from your favorite messaging apps like Line. This is the first Line contact import ever seen on the market. 
+                  我們會支援 iPhone 通訊錄與 Excel 自動輸入。有任何資料轉移上的問題，可以透過Line聯繫客服。
                 </p>
 
               </div>
@@ -929,7 +926,7 @@
           <div class="col-12 col-md-12 col-lg-12 text-center mt-6 mt-md-8">
             <!-- Text -->
             <p class="font-size-lg text-muted">
-              Please don't hesitate to <a href='https://line.me/R/ti/p/@995fliue' target='_blank'>Contact Us</a> if you have any question!
+              還有問題嗎？歡迎到<a href='https://line.me/R/ti/p/@995fliue' target='_blank'>Line客服專線</a>詢問你的問題。
             </p>
           </div>
         </div>
@@ -947,7 +944,7 @@
 
     <!-- FOOTER
     ================================================== -->
-    @@include("partials/footer-en.html")
+    @@include("partials/footer-zh.html")
     <!--@@include("partials/footer.html", {
     "classList": "bg-gray-200"
     })-->

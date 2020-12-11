@@ -13967,3 +13967,36 @@ body.compensate-for-scrollbar {
 @media (min-width: 992px) {
   .sidenav-right {
     right: 0; } }
+
+.btn-primary {
+  background-color: #5005F2; }
+
+.btn-primary:hover {
+  background-color: #5005F2; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #292728; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #5005F2; }
+
+.text-primary {
+  color: #5005F2 !important; }
+
+.text-muted {
+  color: #939598 !important; }
+
+.badge-success-soft {
+  background-color: rgba(66, 186, 150, 0.3); }
+
+.text-success {
+  color: #06BF9D !important; }
+
+a {
+  color: #06BF9D; }
+
+a:hover {
+  color: #06BF9D; }
+
+h3 {
+  font-weight: 600; }
