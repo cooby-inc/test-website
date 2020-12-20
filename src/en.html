@@ -17,45 +17,39 @@
 
     <!-- WELCOME
     ================================================== -->
-    <!-- use transform to ensure Safari works -->
-    <section data-jarallax data-speed=".8" class="pt-8 pt-md-11 pb-7 pb-md-0" style="background-image:url(assets/img/covers/cover-12_short.jpg); transform: translateZ(0);-webkit-transform: translateZ(0);">
-      <div class="container">
-        <div class="row align-items-center">
+    <section class="position-relative pt-12 pt-md-14 mt-n11">
 
-          <div class="col-12 col-md-5 col-lg-5 order-md-2">
-            <div class="text-center img-skewed img-skewed-left mb-8 mb-md-0" data-aos='fade-up' data-aos-delay="100">
-              <!-- Image -->
-              <img src="assets/img/line_account.png"
-                   class="screenshot img-fluid img-skewed-item mw-md-100 d-none"
-                   alt="Line官方帳號條碼"
-                   data-aos="img-skewed-item-left"
-                   data-aos-delay="100">
-            </div>
+      <!-- Shape -->
+      <div class="shape shape-fluid-x shape-blur-2 svg-shim text-light">
+        @@include("assets/img/shapes/blurs/blur-2.svg")
+      </div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row align-items-center text-center text-md-left">
+          <div class="col-12 col-md-6">
+
             <!-- Image -->
+            <img src="assets/img/illustrations/illustration-4.png" alt="..." class="img-fluid mw-130 float-right mb-6 mb-md-0" data-aos="fade-right">
+
           </div>
-          <div class="col-12 col-md-7 col-lg-7 order-md-1" data-aos="fade-up">
+          <div class="col-12 col-md-6">
 
             <!-- Heading -->
-            <h1 class="display-4 text-center text-md-left">
-              <span class="text-white">The Only Sales Platform Built for Messaging</span>
+            <h1 class="display-3 font-weight-bold">
+              <div data-aos="fade-left">Perfect Sales Platform</div>
+              <div data-aos="fade-left" data-aos-delay="100">Built for Messaging</div>
             </h1>
 
             <!-- Text -->
-            <p class="lead text-center text-white text-md-left mb-6 mb-lg-8">
-              Find inner peace in your messaging apps. Put your customers and yourself at ease. Use Cooby with <span class='text-white' data-toggle="typed" data-options='{"strings": ["Line", "Gmail"]}'></span>
+            <p class="font-size-lg text-muted mb-0" data-aos="fade-left" data-aos-delay="200">
+              Find inner peace in your messaging apps. Put your customers and yourself at ease. Use Cooby with <span data-toggle="typed" data-options='{"strings": ["Line", "Gmail"]}'></span>
             </p>
 
-            <!-- Buttons -->
-            <div class="text-center text-md-left">
-              <a href="https://line.me/R/ti/p/@995fliue" class="btn btn-primary shadow lift mr-1" onclick="signUpTracking('Line Follow', 'Top Header')">
-                Try Now!<i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
-              </a>
-            </div>
-
           </div>
-
         </div> <!-- / .row -->
       </div> <!-- / .container -->
+
     </section>
 
     <!-- ABOUT
@@ -126,7 +120,6 @@
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0">
               Marketing agencies, headhunters, etc use Cooby to track everything in messaging apps.
-
             </p>
 
           </div>
@@ -326,6 +319,59 @@
       </div> <!-- / .container -->
     </section>
 
+    <!-- Cooby Assistant
+    ================================================== -->
+    <section class="py-8 py-md-11">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-md-6 col-lg-7 order-md-2">
+
+            <!-- Image -->
+            <img src="assets/img/screenshots/ui/mobile-chat.png" alt="..." class="img-fluid mb-6 mb-md-8 mb-md-0" data-aos="fade-left">
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 order-md-1" data-aos="fade-right">
+
+            <!-- Heading -->
+            <h2 class="font-weight-bold">
+              Hire an Assistant for Free
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-0">
+              Cooby Assistant is just like your real assistant.<br><br> It schedules meetings, takes notes, tracks tasks, answers common customer questions, etc for you.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-top shape-fluid-x svg-shim text-white">
+        @@include("assets/img/shapes/waves/wave-1.svg")
+      </div>
+    </div>
+
+    <!-- VIDEO
+    ================================================== -->
+    <section class="py-12 py-md-13 bg-cover" style="background-image: url(assets/img/covers/cover-2.jpg);">
+      <div class="container py-md-13">
+        <div class="row">
+          <div class="col-12 text-center">
+
+            <!-- Button -->
+            <a href="https://www.youtube.com/watch?v=9I-Y6VQ6tyI" class="btn btn-pill btn-white text-body shadow lift" data-fancybox>
+              <span class="h6 text-uppercase font-weight-bold"><i class="fe fe-play mr-2"></i> Watch video</span>
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
     <!-- INTEGRATIONS
     ================================================== -->
     <section class="d-none bg-dark py-8 py-md-13">
@@ -461,7 +507,55 @@
       </div> <!-- / .container -->
     </section>
 
-    <!-- FEATURES
+    <!-- CROSS-CHANNEL VIEW
+    ================================================== -->
+    <section class="pt-8 pt-md-11">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-md-6 mb-5 mb-md-0">
+
+            <!-- Images -->
+            <div class="row">
+              <div class="col-6 mr-n5">
+
+                <img src="assets/img/photos/photo-23.jpg" alt="..." class="img-fluid mb-4 rounded" data-aos="fade-right" data-aos-delay="100">
+
+                <img src="assets/img/photos/photo-25.jpg" alt="..." class="img-fluid rounded" data-aos="fade-right" data-aos-delay="150">
+
+              </div>
+              <div class="col-6 mt-8">
+
+                <img src="assets/img/photos/photo-22.jpg" alt="..." class="img-fluid mb-4 rounded" data-aos="fade-right">
+
+                <img src="assets/img/photos/photo-24.jpg" alt="..." class="img-fluid rounded"  data-aos="fade-right" data-aos-delay="50">
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-5" data-aos="fade-left">
+
+            <!-- Heading -->
+            <h2 class="font-weight-bold">
+              Cross-Channel View
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-4">
+              Use both emails and messaging apps? See all your activities with a customer across emails and messaging apps in one place
+            </p>
+
+            <!-- Button -->
+            <a href="#!" class="btn btn-primary">
+              Try now
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- CROSS-CHANNEL VIEW
     ================================================== -->
     <section class="py-8 py-md-11 border-bottom" id="service">
       <div class="container">
@@ -469,7 +563,7 @@
           <div class="col-12 col-md-12"  data-aos="fade-up">
             <!-- Heading -->
             <h1 class="font-weight-bold">
-              Deep integration with Line and Gmail
+              Cross-Channel
             </h1>
 
             <!-- Text -->
@@ -487,14 +581,12 @@
 
             <!-- Heading -->
             <h3>
-              Line Integration
+              Do everything in Line
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0">
-              Never type in client info again. You can import all your Line contacts on your phone.<br>
-              With Cooby Assistant Line service, you can easily add a task or attach a file within Line. <br>
-              Web version is even more powerful. Cooby Chrome extension allows you to auto sync your chat history!
+              No more manual data entry work. Import all your Line contacts into Cooby. Add a task or save a file right within Line. <br>
             </p>
 
           </div>
@@ -507,7 +599,7 @@
 
             <!-- Heading -->
             <h3>
-              Gmail Integration
+              Connect to your Gmail
             </h3>
 
             <!-- Text -->
