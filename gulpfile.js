@@ -205,3 +205,5 @@ gulp.task('build:preview', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 
 gulp.task('default', gulp.series(gulp.parallel('fileinclude', 'scss'), gulp.parallel('browsersync', 'watch')));
 
 gulp.task('deploy', () => gulp.src('./dist/**/*').pipe(ghPages()));
+
+gulp.task('deploy-test', () => gulp.src('./dist/**/*').pipe(ghPages({origin: "test"})));
