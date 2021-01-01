@@ -206,4 +206,4 @@ gulp.task('default', gulp.series(gulp.parallel('fileinclude', 'scss'), gulp.para
 
 gulp.task('deploy', () => gulp.src('./dist/**/*').pipe(ghPages()));
 
-gulp.task('deploy-test', () => gulp.src('./dist/**/*').pipe(ghPages({origin: "test"})));
+gulp.task('deploy-test', () => gulp.src('./dist/**/*').pipe(ghPages({remoteUrl: "git@github.com:cooby-inc/test-website.git", origin: "test", branch: "master", force: true})));
