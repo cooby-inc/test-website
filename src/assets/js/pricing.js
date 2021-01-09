@@ -28,6 +28,7 @@
     [].forEach.call(targets, function(e) {
       var annual = e.dataset.annual;
       var monthly = e.dataset.monthly;
+      console.log(annual)
       var decimals = e.dataset.decimals ? e.dataset.decimals : null;
       var duration = e.dataset.duration ? e.dataset.duration : DURATION;
       var options = e.dataset.options ? JSON.parse(e.dataset.options) : null;
