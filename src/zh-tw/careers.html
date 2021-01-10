@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+      "pageTitle": "Cooby 酷比 | 第一次使用就上手的客戶管理工具"
+    })
+  </head>
+  <body class="bg-light">
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/navbar.html", {
+      "classList": "navbar-light bg-white",
+      "container": "container-fluid"
+    })
+
+    <!-- WELCOME
+    ================================================== -->
+    <section data-jarallax data-speed=".8" class="py-10 py-md-14 overlay overlay-black overlay-60 bg-cover jarallax" style="background-image: url(assets/img/covers/cover-13.jpg);">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h1 class="display-2 text-white">
+              加入 Cooby，一起打造最酷的工具服務！
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-white-75 mb-6">
+              酷比由不同背景、不同領域，卻都非常重視挑戰、成長、善良、具同理心特質的夥伴組成，我們非常期待有更多志同道合的夥伴加入！
+            </p>
+
+            <!-- Button -->
+            <a href="#openings" class="btn btn-primary lift" data-toggle="smooth-scroll">
+              探索 Cooby 職缺 <i class="fe fe-arrow-right ml-3"></i>
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>
+
+    <!-- VALUES
+    ================================================== -->
+    <section class="pt-8 pt-md-11">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-md-6">
+
+            <!-- Badge -->
+            <span class="badge badge-primary-desat-soft badge-pill mb-3">
+              <span class="h6 text-uppercase">
+                我們在乎
+              </span>
+            </span>
+
+            <!-- Heading -->
+            <h2>
+              We are open and transparent. <br>
+              <span class="text-primary-desat">Feedback is a gift.</span>
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-6 mb-md-0">
+              No matter your job title or department, if you're a member of our team you are equal. We care deeply about everyone we work with.
+            </p>
+
+          </div>
+          <div class="col-12 col-md-6 col-xl-5">
+
+            <div class="row no-gutters">
+              <div class="col-4">
+
+                <!-- Image -->
+                <div class="w-150 mt-9 p-1 bg-white shadow-lg">
+                  <img src="assets/img/photos/photo-13.jpg" class="img-fluid" alt="...">
+                </div>
+
+              </div>
+              <div class="col-4">
+
+                <!-- Image -->
+                <div class="w-150 p-1 bg-white shadow-lg">
+                  <img src="assets/img/photos/photo-14.jpg" class="img-fluid" alt="...">
+                </div>
+
+              </div>
+              <div class="col-4 position-relative">
+
+                <!-- Image -->
+                <div class="w-150 mt-11 float-right p-1 bg-white shadow-lg">
+                  <img src="assets/img/photos/photo-15.jpg" class="img-fluid" alt="...">
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- BENEFITS
+    ================================================== -->
+    <section class="py-8 py-md-11">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-md-5 order-md-2">
+
+            <!-- Badge -->
+            <span class="badge badge-success-soft badge-pill mb-3">
+              <span class="h6 text-uppercase">
+                Benefits
+              </span>
+            </span>
+
+            <!-- Heading -->
+            <h2>
+              Do happy and rewarding work. <br>
+              <span class="text-success">Enjoy precious life.</span>
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-6 mb-md-0">
+              We put our money where our employees' satisfaction lies. We'll take the best possible care of you with great benefits and the best working environment.
+            </p>
+
+          </div>
+          <div class="col-12 col-md-6 order-md-1">
+
+            <!-- Card -->
+            <div class="card card-border border-success shadow-lg">
+              <div class="card-body">
+
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item d-flex align-items-center">
+
+                    <!-- Text -->
+                    <div class="mr-auto">
+
+                      <!-- Heading -->
+                      <p class="font-weight-bold mb-1">
+                        Best Healthcare
+                      </p>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-muted mb-0">
+                        Compliant with local government requirement and recommendations
+                      </p>
+
+                    </div>
+
+                    <!-- Check -->
+                    <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                      <i class="fe fe-check"></i>
+                    </div>
+
+                  </div>
+                  <div class="list-group-item d-flex align-items-center">
+
+                    <!-- Text -->
+                    <div class="mr-auto">
+
+                      <!-- Heading -->
+                      <p class="font-weight-bold mb-1">
+                        15-day Paid Time Off
+                      </p>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-muted mb-0">
+                        Vacation on your own terms.
+                      </p>
+
+                    </div>
+
+                    <!-- Check -->
+                    <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                      <i class="fe fe-check"></i>
+                    </div>
+
+                  </div>
+                  <div class="list-group-item d-flex align-items-center">
+
+                    <!-- Text -->
+                    <div class="mr-auto">
+
+                      <!-- Heading -->
+                      <p class="font-weight-bold mb-1">
+                        All Equipments You need
+                      </p>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-muted mb-0">
+                        Mac, PC, monitors, standing desk, etc everything you need to focus on work.
+                      </p>
+
+                    </div>
+
+                    <!-- Check -->
+                    <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                      <i class="fe fe-check"></i>
+                    </div>
+
+                  </div>
+                  <div class="list-group-item d-flex align-items-center">
+
+                    <!-- Text -->
+                    <div class="mr-auto">
+
+                      <!-- Heading -->
+                      <p class="font-weight-bold mb-1">
+                        Fun Stuff
+                      </p>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-muted mb-0">
+                        Tuesday and Thursday lunches. Friday drinks. Work From Home (WFH) Wednesdays. NT$700 monthly wellness benefit.
+                      </p>
+
+                    </div>
+
+                    <!-- Check -->
+                    <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                      <i class="fe fe-check"></i>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- IMAGE
+    ================================================== -->
+    <section data-jarallax data-speed=".8" class="py-14 py-lg-16 jarallax" style="background-image: url(assets/img/covers/cover-4.jpg);">
+
+      <!-- Shape -->
+      <div class="shape shape-top shape-fluid-x svg-shim text-light">
+        @@include("assets/img/shapes/angles/angle-top.svg")
+      </div>
+
+      <!-- Shape -->
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+        @@include("assets/img/shapes/angles/angle-bottom.svg")
+      </div>
+
+    </section>
+
+    <!-- APPLYING
+    ================================================== -->
+    <section class="pt-6 pt-md-8" id='openings'>
+      <div class="container pb-8 pb-md-11 border-bottom border-gray-300">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Badge -->
+            <span class="badge badge-pill badge-primary-desat-soft mb-3">
+              <span class="h6 text-uppercase">求職探索</span>
+            </span>
+
+            <!-- Heading -->
+            <h2>
+              一起探索適合你的<span class="text-primary">職缺！</span>
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-gray-700 mb-7 mb-md-9">
+              找到合適的工作，很．重．要。
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12">
+
+
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row align-items-center mb-5">
+          <div class="col">
+
+            <!-- Heading -->
+            <h4 class="font-weight-bold mb-1">
+              所有職位類別
+            </h4>
+
+            <!-- Text -->
+            <p class="font-size-sm text-muted mb-0">
+              每一個團隊成員都很重要
+            </p>
+
+          </div>
+          <div class="col-auto">
+
+            <!-- Badge -->
+            <span class="badge badge-pill badge-success-soft">
+              <span class="h6 text-uppercase">3 職缺</span>
+            </span>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Table -->
+            <div class="table-responsive mb-7 mb-md-9">
+              <table class="table table-align-middle">
+                <thead>
+                  <tr>
+                    <th>
+                      <span class="h6 text-uppercase font-weight-bold">
+                        職位類別
+                      </span>
+                    </th>
+                    <th>
+                      <span class="h6 text-uppercase font-weight-bold">
+                        部門團隊
+                      </span>
+                    </th>
+                    <th>
+                      <span class="h6 text-uppercase font-weight-bold">
+                        工作地點
+                      </span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="mb-1">
+                          前端工程師
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          負責建立我們最好看用戶最愛的 web app
+                        </p>
+                      </a>
+
+                    </td>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="font-size-sm mb-0">
+                          工程
+                        </p>
+                      </a>
+
+                    </td>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="font-size-sm mb-0">
+                          台北，台灣
+                        </p>
+                      </a>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="mb-1">
+                          營運經理
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          負責讓團隊每一個人的工作更快樂更輕鬆
+                        </p>
+                      </a>
+
+                    </td>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="font-size-sm mb-0">
+                          營運
+                        </p>
+                      </a>
+
+                    </td>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="font-size-sm mb-0">
+                          台北，台灣
+                        </p>
+                      </a>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="mb-1">
+                          定義你自己的職位 (MYOR)
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          喜歡Cooby，但卻找不到適合職缺嗎？沒關係，還是聯絡我們！
+                        </p>
+                      </a>
+
+                    </td>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="font-size-sm mb-0">
+                          營運
+                        </p>
+                      </a>
+
+                    </td>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="font-size-sm mb-0">
+                          台北，台灣
+                        </p>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Text -->
+            <p class="font-size-sm text-center text-muted mb-8">
+              這裡沒有找到適合的職缺？非常歡迎<a href="mailto:hello@cooby.co">讓我們知道</a>你也很適合 Cooby！
+            </p>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- TESTIMONIALS
+    ================================================== -->
+    <section class="pt-8 pt-md-11 d-none">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h2>
+              Remember, our employees are our biggest fans.
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-7 mb-md-9">
+              No matter your job title or department, if you're a member of our team you are our top priority. We can deeply about everyone who works with us.
+            </p>
+
+          </div>
+        </div><!-- / .row -->
+        <div class="card card-row shadow-light-lg">
+          <div class="row no-gutters">
+            <a class="col-12 col-md-6 bg-cover card-img-left" style="background-image: url(assets/img/photos/photo-1.jpg);" href="#!">
+
+              <!-- Image (placeholder) -->
+              <img src="assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+              <!-- Shape -->
+              <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
+                @@include("assets/img/shapes/curves/curve-4.svg")
+              </div>
+
+            </a>
+            <div class="col-12 col-md-6 order-md-1">
+
+              <!-- Body -->
+              <div class="card-body">
+                <blockquote class="blockquote mb-0 text-center">
+
+                  <!-- Text -->
+                  <p class="mb-5 mb-md-7">
+                    “Working at Landkit has been a dream. The team is amazing, the office is perfect, and I feel like I'm part of a family. I'll be here for a great many years.”
+                  </p>
+
+                  <!-- Footer -->
+                  <footer class="blockquote-footer">
+                    <span class="h6 text-uppercase">William Callan</span>
+                  </footer>
+
+                </blockquote>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative mt-n11">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>
+
+    <!-- FOOTER
+    ================================================== -->
+    <section class="pt-11 bg-dark">
+      @@include("partials/footer.html", {
+        "classList": "bg-dark"
+      })
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>
