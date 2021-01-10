@@ -2,20 +2,17 @@
 <html lang="en">
   <head>
     @@include("partials/head.html", {
-      "pageTitle": "Landkit"
+    "pageTitle": "Cooby 酷比 | 最人性化的保險業務客管系統"
     })
   </head>
-  <body>
+  <body class="bg-light">
 
-    <!-- MODALS
-    ================================================== -->
-    @@include("partials/modals.html")
 
     <!-- NAVBAR
     ================================================== -->
     @@include("partials/navbar.html", {
-      "classList": "navbar-light bg-white",
-      "container": "container-fluid"
+    "classList": "navbar-light bg-white",
+    "container": "container"
     })
 
     <!-- WELCOME
@@ -283,11 +280,7 @@
 
     <!-- FOOTER
     ================================================== -->
-    <section class="pt-6 bg-dark">
-      @@include("partials/footer.html", {
-        "classList": "bg-dark border-top border-gray-800-50"
-      })
-    </section>
+    @@include("partials/footer.html")
 
     <!-- JAVASCRIPT
     ================================================== -->
