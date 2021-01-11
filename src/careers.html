@@ -2,20 +2,17 @@
 <html lang="en">
   <head>
     @@include("partials/head.html", {
-      "pageTitle": "Cooby Career | Customer Platform Built for Messaging"
+    "pageTitle": "Cooby 酷比 | 最人性化的保險業務客管系統"
     })
   </head>
   <body class="bg-light">
 
-    <!-- MODALS
-    ================================================== -->
-    @@include("partials/modals.html")
 
     <!-- NAVBAR
     ================================================== -->
     @@include("partials/navbar.html", {
-      "classList": "navbar-light bg-white",
-      "container": "container-fluid"
+    "classList": "navbar-light bg-white",
+    "container": "container"
     })
 
     <!-- WELCOME
@@ -27,16 +24,16 @@
 
             <!-- Heading -->
             <h1 class="display-2 text-white">
-              Join us to make a difference
+              Want to work with us?
             </h1>
 
             <!-- Text -->
             <p class="lead text-white-75 mb-6">
-              "Cooby is unique. They have the most open culture and hire brilient minds from diverse background. Besides, they are the most fun!"
+              We're always looking to hire talented folks to join our ever-growing team of designers, engineers, and support staff.
             </p>
 
             <!-- Button -->
-            <a href="#openings" class="btn btn-primary lift" data-toggle="smooth-scroll">
+            <a href="#!" class="btn btn-primary lift">
               View open positions <i class="fe fe-arrow-right ml-3"></i>
             </a>
 
@@ -69,13 +66,13 @@
 
             <!-- Heading -->
             <h2>
-              We are open and transparent. <br>
-              <span class="text-primary-desat">Feedback is a gift.</span>
+              We care about everyone, <br>
+              <span class="text-primary-desat">but employees are first</span>.
             </h2>
 
             <!-- Text -->
             <p class="font-size-lg text-muted mb-6 mb-md-0">
-              No matter your job title or department, if you're a member of our team you are equal. We care deeply about everyone we work with.
+              No matter your job title or department, if you're a member of our team you are our top priority. We can deeply about everyone who works with us.
             </p>
 
           </div>
@@ -129,13 +126,13 @@
 
             <!-- Heading -->
             <h2>
-              Do happy and rewarding work. <br>
-              <span class="text-success">Enjoy precious life.</span>
+              We'll take of you with <br>
+              <span class="text-success">a great benefits package</span>.
             </h2>
 
             <!-- Text -->
             <p class="font-size-lg text-muted mb-6 mb-md-0">
-              We put our money where our employees' satisfaction lies. We'll take the best possible care of you with great benefits and the best working environment.
+              We put our money where our mouthes are. Once you're part of our team, we're going to take the best possible care of you with tons of benefits and perks unavailable anywhere else.
             </p>
 
           </div>
@@ -154,12 +151,12 @@
 
                       <!-- Heading -->
                       <p class="font-weight-bold mb-1">
-                        Best Healthcare
+                        Comprehensive benefits
                       </p>
 
                       <!-- Text -->
                       <p class="font-size-sm text-muted mb-0">
-                        Compliant with local government requirement and recommendations
+                        Health, dental, vision, 401k, and more.
                       </p>
 
                     </div>
@@ -177,7 +174,7 @@
 
                       <!-- Heading -->
                       <p class="font-weight-bold mb-1">
-                        15-day Paid Time Off
+                        Unlimited time off
                       </p>
 
                       <!-- Text -->
@@ -200,12 +197,12 @@
 
                       <!-- Heading -->
                       <p class="font-weight-bold mb-1">
-                        All Equipments You need
+                        Cutting edge hardware
                       </p>
 
                       <!-- Text -->
                       <p class="font-size-sm text-muted mb-0">
-                        Mac, PC, monitors, standing desk, etc everything you need to focus on work.
+                        We provide brand new computers and phones.
                       </p>
 
                     </div>
@@ -223,12 +220,12 @@
 
                       <!-- Heading -->
                       <p class="font-weight-bold mb-1">
-                        Fun Stuff
+                        Moving assistance
                       </p>
 
                       <!-- Text -->
                       <p class="font-size-sm text-muted mb-0">
-                        Tuesday and Thursday lunches. Friday drinks. Work From Home (WFH) Wednesdays. NT$700 monthly wellness benefit.
+                        We will help you get here to work with us!
                       </p>
 
                     </div>
@@ -267,7 +264,7 @@
 
     <!-- APPLYING
     ================================================== -->
-    <section class="pt-6 pt-md-8" id='openings'>
+    <section class="pt-6 pt-md-8">
       <div class="container pb-8 pb-md-11 border-bottom border-gray-300">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
@@ -292,7 +289,68 @@
         <div class="row">
           <div class="col-12">
 
+            <!-- Form -->
+            <form class="mb-7 mb-md-9">
+              <div class="row">
+                <div class="col-12 col-md-4">
 
+                  <div class="form-group mb-5 mb-md-0">
+
+                    <!-- Label -->
+                    <label for="applyRoles">Roles</label>
+
+                    <!-- Select -->
+                    <select id="applyRoles" class="custom-select">
+                      <option selected>All roles</option>
+                      <option>Design</option>
+                      <option>Engineering</option>
+                      <option>Product</option>
+                      <option>Testing</option>
+                      <option>Support</option>
+                    </select>
+
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-4">
+
+                  <div class="form-group mb-5 mb-md-0">
+
+                    <!-- Label -->
+                    <label for="applyTeam">Team</label>
+
+                    <!-- Select -->
+                    <select id="applyTeam" class="custom-select">
+                      <option selected>All teams</option>
+                      <option>Consumer</option>
+                      <option>Consulting</option>
+                      <option>Internal tools</option>
+                    </select>
+
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-4">
+
+                  <div class="form-group mb-0">
+
+                    <!-- Label -->
+                    <label for="applyLocation">Location</label>
+
+                    <!-- Select -->
+                    <select id="applyLocation" class="custom-select">
+                      <option selected>All locations</option>
+                      <option>London</option>
+                      <option>Los Angeles</option>
+                      <option>Paris</option>
+                      <option>San Francisco</option>
+                    </select>
+
+                  </div>
+
+                </div>
+              </div> <!-- / .row -->
+            </form>
 
           </div>
         </div> <!-- / .row -->
@@ -301,12 +359,12 @@
 
             <!-- Heading -->
             <h4 class="font-weight-bold mb-1">
-              All Roles
+              Design & UX
             </h4>
 
             <!-- Text -->
             <p class="font-size-sm text-muted mb-0">
-              Every single team member counts.
+              User experience and design are top priorities at Landkit.
             </p>
 
           </div>
@@ -314,7 +372,7 @@
 
             <!-- Badge -->
             <span class="badge badge-pill badge-success-soft">
-              <span class="h6 text-uppercase">3 openings</span>
+              <span class="h6 text-uppercase">4 openings</span>
             </span>
 
           </div>
@@ -350,10 +408,10 @@
 
                       <a href="career-single.html" class="text-reset text-decoration-none">
                         <p class="mb-1">
-                          Frontend Developer
+                          Senior UX Designer
                         </p>
                         <p class="font-size-sm text-muted mb-0">
-                          Responsible for building great web applications that users love
+                          Responsible for design systems and brand management.
                         </p>
                       </a>
 
@@ -362,7 +420,7 @@
 
                       <a href="career-single.html" class="text-reset text-decoration-none">
                         <p class="font-size-sm mb-0">
-                          Engineering
+                          Consumer
                         </p>
                       </a>
 
@@ -371,7 +429,7 @@
 
                       <a href="career-single.html" class="text-reset text-decoration-none">
                         <p class="font-size-sm mb-0">
-                          Taipei, Taiwan
+                          Los Angeles
                         </p>
                       </a>
 
@@ -382,10 +440,10 @@
 
                       <a href="career-single.html" class="text-reset text-decoration-none">
                         <p class="mb-1">
-                          Operation Manager
+                          Motion Designer
                         </p>
                         <p class="font-size-sm text-muted mb-0">
-                          Responsible for making everyone's life easier
+                          Responsible for creating life in our apps.
                         </p>
                       </a>
 
@@ -394,7 +452,7 @@
 
                       <a href="career-single.html" class="text-reset text-decoration-none">
                         <p class="font-size-sm mb-0">
-                          Operation
+                          Product
                         </p>
                       </a>
 
@@ -403,7 +461,7 @@
 
                       <a href="career-single.html" class="text-reset text-decoration-none">
                         <p class="font-size-sm mb-0">
-                          Taipei, Taiwan
+                          San Francisco, CA
                         </p>
                       </a>
 
@@ -414,10 +472,10 @@
 
                       <a href="career-single.html" class="text-reset text-decoration-none">
                         <p class="mb-1">
-                          Make Your Own Role (MYOR)
+                          Design Researcher
                         </p>
                         <p class="font-size-sm text-muted mb-0">
-                          Believe in our culture and vision, but no opening for you? Contact us.
+                          Help us make the best decisions with qualitative experiments.
                         </p>
                       </a>
 
@@ -426,7 +484,7 @@
 
                       <a href="career-single.html" class="text-reset text-decoration-none">
                         <p class="font-size-sm mb-0">
-                          Operation
+                          Consulting
                         </p>
                       </a>
 
@@ -435,18 +493,236 @@
 
                       <a href="career-single.html" class="text-reset text-decoration-none">
                         <p class="font-size-sm mb-0">
-                          Taipei, Taiwan
+                          London
                         </p>
                       </a>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="mb-1">
+                          Production Designer
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          Create, collect, and distribute beautiful assets.
+                        </p>
+                      </a>
+
+                    </td>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="font-size-sm mb-0">
+                          Consulting
+                        </p>
+                      </a>
+
+                    </td>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="font-size-sm mb-0">
+                          Paris
+                        </p>
+                      </a>
+
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row align-items-center mb-5">
+          <div class="col">
+
+            <!-- Heading -->
+            <h4 class="font-weight-bold mb-1">
+              Engineering
+            </h4>
+
             <!-- Text -->
-            <p class="font-size-sm text-center text-muted mb-8">
+            <p class="font-size-sm text-muted mb-0">
+              This is Landkit's bread and butter – help us make it better.
+            </p>
+
+          </div>
+          <div class="col-auto">
+
+            <!-- Badge -->
+            <span class="badge badge-pill badge-success-soft">
+              <span class="h6 text-uppercase">4 openings</span>
+            </span>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Table -->
+            <div class="table-responsive mb-5">
+              <table class="table table-align-middle">
+                <thead>
+                  <tr>
+                    <th>
+                      <span class="h6 text-uppercase font-weight-bold">
+                        Role
+                      </span>
+                    </th>
+                    <th>
+                      <span class="h6 text-uppercase font-weight-bold">
+                        Team
+                      </span>
+                    </th>
+                    <th>
+                      <span class="h6 text-uppercase font-weight-bold">
+                        Location
+                      </span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="mb-1">
+                          Ruby Engineer
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          Responsible for pipeline and build system.
+                        </p>
+                      </a>
+
+                    </td>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="font-size-sm mb-0">
+                          Consumer
+                        </p>
+                      </a>
+
+                    </td>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="font-size-sm mb-0">
+                          Los Angeles
+                        </p>
+                      </a>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="mb-1">
+                          Javascript Prototyper
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          Helping us build quick experiments for testing.
+                        </p>
+                      </a>
+
+                    </td>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="font-size-sm mb-0">
+                          Product
+                        </p>
+                      </a>
+
+                    </td>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="font-size-sm mb-0">
+                          San Francisco, CA
+                        </p>
+                      </a>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="mb-1">
+                          Reliability Engineer
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          Managing operations and testing for improved stability.
+                        </p>
+                      </a>
+
+                    </td>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="font-size-sm mb-0">
+                          Consulting
+                        </p>
+                      </a>
+
+                    </td>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="font-size-sm mb-0">
+                          London
+                        </p>
+                      </a>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="mb-1">
+                          Junior PHP Engineer
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          Help us with any odds and ends that need tackling.
+                        </p>
+                      </a>
+
+                    </td>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="font-size-sm mb-0">
+                          Consulting
+                        </p>
+                      </a>
+
+                    </td>
+                    <td>
+
+                      <a href="career-single.html" class="text-reset text-decoration-none">
+                        <p class="font-size-sm mb-0">
+                          Paris
+                        </p>
+                      </a>
+
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Text -->
+            <p class="font-size-sm text-center text-muted mb-0">
               Don’t see the job you want? <a href="#!">Let us know</a>.
             </p>
+
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
@@ -454,7 +730,7 @@
 
     <!-- TESTIMONIALS
     ================================================== -->
-    <section class="pt-8 pt-md-11 d-none">
+    <section class="pt-8 pt-md-11">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
@@ -520,11 +796,7 @@
 
     <!-- FOOTER
     ================================================== -->
-    <section class="pt-11 bg-dark">
-      @@include("partials/footer.html", {
-        "classList": "bg-dark"
-      })
-    </section>
+    @@include("partials/footer.html")
 
     <!-- JAVASCRIPT
     ================================================== -->

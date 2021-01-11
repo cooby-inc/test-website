@@ -2,28 +2,25 @@
 <html lang="en">
   <head>
     @@include("partials/head.html", {
-      "pageTitle": "Cooby Pricing | Customer Platform Built for Messaging"
+      "pageTitle": "Cooby 酷比 | 最人性化的保險業務客管系統"
     })
   </head>
-  <body class="pt-10 bg-light">
+  <body class="bg-light">
 
-    <!-- MODALS
-    ================================================== -->
-    @@include("partials/modals.html")
 
     <!-- NAVBAR
     ================================================== -->
     @@include("partials/navbar.html", {
-      "classList": "navbar-light fixed-top bg-white border-bottom",
-      "container": "container-fluid"
+    "classList": "navbar-light bg-white",
+    "container": "container"
     })
 
     <!-- WELCOME
     ================================================== -->
-    <section class="pt-8 pt-md-11 pb-10 pb-md-15 bg-primary">
+    <section class="pt-8 pt-md-11 pb-10 pb-md-15 bg-cooby-light-gray">
 
       <!-- Shape -->
-      <div class="shape shape-blur-3 svg-shim text-white">
+      <div class="shape shape-blur-3 svg-shim">
         @@include("assets/img/shapes/blurs/blur-3.svg")
       </div>
 
@@ -33,12 +30,12 @@
           <div class="col-12 col-md-10 col-lg-8 text-center">
 
             <!-- Heading -->
-            <h1 class="display-2 text-white">
-              Tailored to Your Needs
+            <h1 class="display-3 font-weight-bold text-primary">
+              Cooby Tailored to Your Needs
             </h1>
 
             <!-- Text -->
-            <p class="lead text-white-80 mb-6 mb-md-8">
+            <p class="lead text-muted mb-6 mb-md-8">
               All types of businesses serve different types of customers, so we give you options to meet your unique needs.
             </p>
 
@@ -46,18 +43,18 @@
             <form class="d-flex align-items-center justify-content-center mb-7 mb-md-9">
 
               <!-- Label -->
-              <span class="text-white-80">
+              <span class="text-muted">
                 Annual
               </span>
 
               <!-- Switch -->
               <div class="custom-control custom-switch custom-switch-dark mx-3">
-                <input type="checkbox" class="custom-control-input" id="billingSwitch" data-toggle="price" data-target=".price" checked>
+                <input type="checkbox" class="custom-control-input" id="billingSwitch" data-toggle="price" data-target=".price">
                 <label class="custom-control-label" for="billingSwitch"></label>
               </div>
 
               <!-- Label -->
-              <span class="text-white-80">
+              <span class="text-muted">
                 Monthly
               </span>
 
@@ -79,7 +76,7 @@
 
     <!-- PRICING
     ================================================== -->
-    <section class="mt-n8 mt-md-n14">
+    <section class="mt-n8 mt-md-n14 pb-12">
       <div class="container">
         <div class="form-row">
           <div class="col-12 col-md-4">
@@ -160,7 +157,7 @@
                 <!-- Price -->
                 <div class="d-flex justify-content-center">
                   <span class="h2 mb-0 mt-2">$</span>
-                  <span class="price display-2 mb-0" data-annual="8.34" data-monthly="9.99" data-decimals="2">9.99</span>
+                  <span class="price display-2 mb-0" data-annual="29" data-monthly="49">9.99</span>
                   <span class="h2 align-self-end mb-1">/mo</span>
                 </div>
 
@@ -235,7 +232,7 @@
                 <!-- Price -->
                 <div class="d-flex justify-content-center">
                   <span class="h2 mb-0 mt-2">$</span>
-                  <span class="price display-2 mb-0" data-annual="24.99" data-monthly="29.99" data-decimals="2">29.99</span>
+                  <span class="price display-2 mb-0" data-annual="49" data-monthly="69">29.99</span>
                   <span class="h2 align-self-end mb-1">/mo</span>
                 </div>
 
@@ -315,9 +312,7 @@
 
     <!-- FOOTER
     ================================================== -->
-    @@include("partials/footer.html", {
-      "classList": "bg-dark"
-    })
+    @@include("partials/footer.html")
 
     <!-- JAVASCRIPT
     ================================================== -->
