@@ -1,4 +1,4 @@
-// 
+//
 // user-variables.scss
 // Use this to overwrite Bootstrap and Landkit variables
 //
@@ -6,3 +6,8 @@
 // Example of a variable override to change Landkit's background color
 // Remove the "//" to comment it in and see it in action!
 // $font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+
+$custom-switch-indicator-bg: #33b5e5 !default;
+$custom-switch-indicator-active-bg: #33b5e5 !default;
+$custom-switch-bg-checked: #ed0967 !default;
+$custom-switch-bg: #ff9cc5 !default;

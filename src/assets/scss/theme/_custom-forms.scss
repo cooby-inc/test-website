@@ -14,6 +14,7 @@
       top: (($font-size-base * $line-height-base - $custom-switch-height) / 2);
       height: $custom-switch-height;
       border-radius: $custom-switch-height / 2;
+      background-color: $custom-switch-bg;
     }
 
     &::after {
@@ -24,6 +25,10 @@
   }
 
   .custom-control-input:checked ~ .custom-control-label {
+
+    &::before {
+      background-color: $custom-switch-bg-checked;
+    }
 
     &::after {
       background-color: $custom-switch-indicator-active-bg;
