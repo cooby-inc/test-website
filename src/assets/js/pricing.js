@@ -13,14 +13,34 @@
 
   var toggle = document.querySelector('[data-toggle="price"]');
   var DURATION = 1;
-
+  var BASE_URL = 'https://app.cooby.co/signup?lookup_key=';
   //
   // Functions
   //
 
+  function updateDesc(isMonthly) {
+    var targets = document.querySelectorAll('.desc');
+    [].forEach.call(targets, function(e) {
+      var annual = e.dataset.annual;
+      var monthly = e.dataset.monthly;
+
+      e.innerHTML = (isMonthly) ? monthly : annual;
+    });
+  }
+
+  function updateHref(isMonthly) {
+    var targets = document.querySelectorAll('.plan');
+    [].forEach.call(targets, function(e) {
+      var annual = e.dataset.annual;
+      var monthly = e.dataset.monthly;
+
+      e.href = BASE_URL + ((isMonthly) ? monthly : annual);
+    });
+  }
+
   function update(e) {
     var input = e.target;
-    var checked = input.checked;
+    var checked = input.checked; // checked is monthly
 
     var target = input.dataset.target;
     var targets = document.querySelectorAll(target);
@@ -28,7 +48,7 @@
     [].forEach.call(targets, function(e) {
       var annual = e.dataset.annual;
       var monthly = e.dataset.monthly;
-      console.log(annual)
+
       var decimals = e.dataset.decimals ? e.dataset.decimals : null;
       var duration = e.dataset.duration ? e.dataset.duration : DURATION;
       var options = e.dataset.options ? JSON.parse(e.dataset.options) : null;
@@ -41,11 +61,17 @@
         console.error(countUp.error);
       }
     });
+
+    updateHref(checked);
+    updateDesc(checked);
   }
 
   //
   // Events
   //
+
+  updateHref(toggle.checked);
+  updateDesc(toggle.checked);
 
   if (typeof CountUp !== 'undefined' && toggle) {
     toggle.addEventListener('change', function(e) {
