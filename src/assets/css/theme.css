@@ -6415,9 +6415,6 @@ button.bg-white:focus {
 .w-75 {
   width: 75% !important; }
 
-.w-90 {
-  width: 90% !important; }
-
 .w-100 {
   width: 100% !important; }
 
@@ -13985,7 +13982,7 @@ body {
   background-color: #5f2179 !important; }
 
 .bg-cooby-light-gray {
-  background-color: #E6E7E8 !important; }
+  background-color: #F6F6F6 !important; }
 
 .cooby-shadow {
   box-shadow: 0 1rem 2.5rem rgba(22, 28, 45, 0.1), 0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.1) !important; }
@@ -13994,7 +13991,10 @@ body {
   box-shadow: inset 0 -10px 50px -10px rgba(22, 28, 45, 0.1); }
 
 .border-top-cooby {
-  border-top: 1px solid #E6E7E8 !important; }
+  border-top: 3px solid #5005F2 !important; }
+
+.border-bottom-cooby {
+  border-bottom: 1px solid #E6E7E8 !important; }
 
 .navbar-nav .nav-link {
   font-weight: 400; }
