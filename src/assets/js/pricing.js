@@ -69,9 +69,11 @@
   //
   // Events
   //
+  if (toggle) {
+    updateHref(toggle.checked);
+    updateDesc(toggle.checked);
+  }
 
-  updateHref(toggle.checked);
-  updateDesc(toggle.checked);
 
   if (typeof CountUp !== 'undefined' && toggle) {
     toggle.addEventListener('change', function(e) {
