@@ -7,3 +7,9 @@ window.__be.id = "5efc3ac5d6462e000643fd60";
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
 })();
 /// End of ChatBot code
+
+window.BE_API = window.BE_API || {};
+
+function openChatbotWindow() {
+  window.BE_API.openChatWindow();
+}
