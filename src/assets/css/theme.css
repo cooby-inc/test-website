@@ -13973,6 +13973,7 @@ body.compensate-for-scrollbar {
 
 body {
   font-family: 'Rubik', sans-serif;
+  font-weight: 300;
   color: #4D4D4F; }
 
 .bg-cooby-1 {
@@ -13998,6 +13999,9 @@ body {
 
 .border-bottom-cooby {
   border-bottom: 1px solid #E6E7E8 !important; }
+
+ul li {
+  font-size: 15px; }
 
 .navbar-nav .nav-link {
   font-weight: 400; }
@@ -14029,7 +14033,7 @@ body {
   color: #939598 !important; }
 
 .badge-success-soft {
-  background-color: rgba(66, 186, 150, 0.3); }
+  background-color: rgba(66, 186, 150, 0.1); }
 
 .text-success {
   color: #06BF9D !important; }
