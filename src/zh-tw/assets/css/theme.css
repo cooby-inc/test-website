@@ -13974,8 +13974,7 @@ body.compensate-for-scrollbar {
 body {
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
-  font-size: 16px;
-  color: black; }
+  color: #4D4D4F; }
 
 .bg-cooby-1 {
   background-color: #280379 !important; }
@@ -14024,16 +14023,13 @@ ul li {
 .btn:not([class*="btn-outline"]) {
   border-color: #5005F2 !important; }
 
-.navbar-nav .dropdown > .dropdown-menu {
-  left: 90%; }
-
 .navbar-light .navbar-nav .nav-link {
   color: #292728; }
 
 .navbar-light .navbar-nav .nav-link:hover {
   color: #5005F2; }
 
-.text-primary, a.text-primary:hover, a.text-primary:focus {
+.text-primary {
   color: #5005F2 !important; }
 
 .text-green {
@@ -14059,9 +14055,3 @@ h3 {
 
 .font-weight-bold {
   font-weight: 500 !important; }
-
-.dropdown-item {
-  color: black; }
-
-.dropdown-item.active, .dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus {
-  color: #5005F2; }

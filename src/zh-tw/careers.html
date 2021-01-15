@@ -2,20 +2,16 @@
 <html lang="en">
   <head>
     @@include("partials/head.html", {
-      "pageTitle": "Cooby 酷比 | 第一次使用就上手的客戶管理工具"
+    "pageTitle": "Cooby 酷比 | 第一次使用就上手的客戶管理工具"
     })
   </head>
   <body class="bg-light">
 
-    <!-- MODALS
-    ================================================== -->
-    @@include("partials/modals.html")
-
     <!-- NAVBAR
     ================================================== -->
     @@include("partials/navbar.html", {
-      "classList": "navbar-light bg-white",
-      "container": "container-fluid"
+    "classList": "navbar-light bg-white",
+    "container": "container"
     })
 
     <!-- WELCOME
@@ -61,16 +57,14 @@
           <div class="col-12 col-md-6">
 
             <!-- Badge -->
-            <span class="badge badge-primary-desat-soft badge-pill mb-3">
-              <span class="h6 text-uppercase">
+            <h6 class="text-uppercase text-primary font-weight-bold">
                 我們在乎
-              </span>
-            </span>
+            </h6>
 
             <!-- Heading -->
             <h2>
               我們相信人的部分總是<br>
-              <span class="text-primary-desat">比其他所有都來得更重要</span>
+              比其他所有都來得更重要
             </h2>
 
             <!-- Text -->
@@ -121,16 +115,14 @@
           <div class="col-12 col-md-5 order-md-2">
 
             <!-- Badge -->
-            <span class="badge badge-success-soft badge-pill mb-3">
-              <span class="h6 text-uppercase">
+            <h6 class="text-uppercase text-primary font-weight-bold">
                 福利
-              </span>
-            </span>
+            </h6>
 
             <!-- Heading -->
             <h2>
               我們將會盡力打造一個讓你<br>
-              <span class="text-success">毫無後顧之憂的工作環境</span>
+              毫無後顧之憂的工作環境
             </h2>
 
             <!-- Text -->
@@ -142,7 +134,7 @@
           <div class="col-12 col-md-6 order-md-1">
 
             <!-- Card -->
-            <div class="card card-border border-success shadow-lg">
+            <div class="card card-border border-cooby-primary shadow-lg">
               <div class="card-body">
 
                 <!-- List group -->
@@ -268,22 +260,21 @@
     <!-- APPLYING
     ================================================== -->
     <section class="pt-6 pt-md-8" id='openings'>
-      <div class="container pb-8 pb-md-11 border-bottom border-gray-300">
+      <div class="container pb-8 pb-md-11 border-gray-300">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
 
             <!-- Badge -->
-            <span class="badge badge-pill badge-primary-desat-soft mb-3">
-              <span class="h6 text-uppercase">求職探索</span>
-            </span>
+            <h6 class="text-uppercase text-primary font-weight-bold">求職探索
+            </h6>
 
             <!-- Heading -->
             <h2>
-              一起探索適合你的<span class="text-primary">職缺！</span>
+              一起探索適合你的職缺！
             </h2>
 
             <!-- Text -->
-            <p class="font-size-lg text-gray-700 mb-7 mb-md-9">
+            <p class="font-size-lg mb-7 mb-md-9">
               找到合適的工作，很．重．要
             </p>
 
@@ -296,7 +287,7 @@
 
           </div>
         </div> <!-- / .row -->
-        <div class="row align-items-center mb-5">
+        <div class="d-none row align-items-center mb-5">
           <div class="col">
 
             <!-- Heading -->
@@ -512,7 +503,7 @@
 
     <!-- SHAPE
     ================================================== -->
-    <div class="position-relative mt-n11">
+    <div class="d-none position-relative mt-n11">
       <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
         @@include("assets/img/shapes/curves/curve-1.svg")
       </div>
@@ -520,11 +511,7 @@
 
     <!-- FOOTER
     ================================================== -->
-    <section class="pt-11 bg-dark">
-      @@include("partials/footer.html", {
-        "classList": "bg-dark"
-      })
-    </section>
+    @@include("partials/footer.html")
 
     <!-- JAVASCRIPT
     ================================================== -->

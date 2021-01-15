@@ -2,20 +2,17 @@
 <html lang="en">
   <head>
     @@include("partials/head.html", {
-      "pageTitle": "Cooby 酷比 | 第一次使用就上手的客戶管理工具"
+    "pageTitle": "Cooby 酷比 | 第一次使用就上手的客戶管理工具"
     })
   </head>
   <body>
 
-    <!-- MODALS
-    ================================================== -->
-    @@include("partials/modals.html")
 
     <!-- NAVBAR
     ================================================== -->
     @@include("partials/navbar.html", {
-      "classList": "navbar-light bg-white",
-      "container": "container-fluid"
+    "classList": "navbar-light bg-white",
+    "container": "container"
     })
 
     <!-- WELCOME
@@ -80,7 +77,7 @@
 
             <!-- Heading -->
             <h2 class="font-weight-bold">
-              讓你的工作<span class="text-primary">更容易、更有效率</span>
+              讓你的工作更容易、更有效率
             </h2>
 
             <!-- Text -->
@@ -283,11 +280,7 @@
 
     <!-- FOOTER
     ================================================== -->
-    <section class="pt-6 bg-dark">
-      @@include("partials/footer.html", {
-        "classList": "bg-dark border-top border-gray-800-50"
-      })
-    </section>
+    @@include("partials/footer.html")
 
     <!-- JAVASCRIPT
     ================================================== -->

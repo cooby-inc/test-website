@@ -2,20 +2,16 @@
 <html lang="en">
   <head>
     @@include("partials/head.html", {
-      "pageTitle": "Cooby 酷比 | 第一次使用就上手的客戶管理工具"
+    "pageTitle": "Cooby 酷比 | 第一次使用就上手的客戶管理工具"
     })
   </head>
   <body class="pt-10 bg-light">
 
-    <!-- MODALS
-    ================================================== -->
-    @@include("partials/modals.html")
-
     <!-- NAVBAR
     ================================================== -->
     @@include("partials/navbar.html", {
-      "classList": "navbar-light fixed-top bg-white border-bottom",
-      "container": "container-fluid"
+    "classList": "navbar-light bg-white",
+    "container": "container"
     })
 
     <!-- WELCOME
@@ -113,7 +109,7 @@
 
     <!-- CURVE
     ================================================== -->
-    <div class="position-relative mt-8">
+    <div class="d-none position-relative mt-8">
       <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
         @@include("assets/img/shapes/curves/curve-2.svg")
       </div>
@@ -122,17 +118,15 @@
 
     <!-- FAQ
     ================================================== -->
-    <section class="bg-dark pt-2">
+    <section class="pt-2">
       <div class="container pt-11 pt-md-11 pb-8 pb-md-11">
         <div class="row">
           <div class="col-12 col-md-12 col-lg-12 text-center" id='faq'>
             <!-- Badge -->
-            <span class="badge badge-pill badge-gray-700-soft mb-4">
-              <span class="h6 font-weight-bold text-uppercase">Cooby 幫你整理了一些你可能會產生的疑問</span>
-            </span>
+            <h6 class="text-uppercase text-primary font-weight-bold">Cooby 幫你整理了一些你可能會產生的疑問</h6>
 
             <!-- Heading -->
-            <h1 class="display-4 text-white">
+            <h1 class="display-4">
               Q&A
             </h1>
 
@@ -158,7 +152,7 @@
               <div class="ml-5">
 
                 <!-- Heading -->
-                <h4 class="text-white">
+                <h4>
                   我的公司已經有既有的系統了，為什麼需要試試 Cooby 呢？
                 </h4>
 
@@ -182,7 +176,7 @@
               <div class="ml-5">
 
                 <!-- Heading -->
-                <h4 class="text-white">
+                <h4>
                   Cooby 目前支援哪些平台？
                 </h4>
 
@@ -206,7 +200,7 @@
               <div class="ml-5">
 
                 <!-- Heading -->
-                <h4 class="text-white">
+                <h4>
                   我對於工具有額外需求時，有機會被採用嗎？
                 </h4>
 
@@ -232,7 +226,7 @@
               <div class="ml-5">
 
                 <!-- Heading -->
-                <h4 class="text-white">
+                <h4>
                   Cooby 需要收費嗎？
                 </h4>
 
@@ -256,7 +250,7 @@
               <div class="ml-5">
 
                 <!-- Heading -->
-                <h4 class="text-white">
+                <h4>
                   當我開始使用時，手動輸出客戶資料到 Cooby 好像很麻煩，有沒有更好的方法？
                 </h4>
 
@@ -280,7 +274,7 @@
               <div class="ml-5">
 
                 <!-- Heading -->
-                <h4 class="text-white">
+                <h4>
                   我正在考慮是否使用華佗、Kiwi 或超級顧問等軟體，想請問 Cooby 有什麼特別之處？
                 </h4>
 
@@ -396,7 +390,7 @@
 
     <!-- SHAPE
     ================================================== -->
-    <div class="position-relative">
+    <div class="d-none position-relative">
       <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
         @@include("assets/img/shapes/curves/curve-1.svg")
       </div>
@@ -404,9 +398,7 @@
 
     <!-- FOOTER
     ================================================== -->
-    @@include("partials/footer.html", {
-      "classList": "bg-dark"
-    })
+    @@include("partials/footer.html")
 
     <!-- JAVASCRIPT
     ================================================== -->

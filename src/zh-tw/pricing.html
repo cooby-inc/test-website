@@ -2,20 +2,16 @@
 <html lang="en">
   <head>
     @@include("partials/head.html", {
-      "pageTitle": "Cooby 酷比 | 第一次使用就上手的客戶管理工具"
+    "pageTitle": "Cooby 酷比 | 第一次使用就上手的客戶管理工具"
     })
   </head>
   <body class="pt-10 bg-light">
 
-    <!-- MODALS
-    ================================================== -->
-    @@include("partials/modals.html")
-
     <!-- NAVBAR
     ================================================== -->
     @@include("partials/navbar.html", {
-      "classList": "navbar-light fixed-top bg-white border-bottom",
-      "container": "container-fluid"
+    "classList": "navbar-light bg-white",
+    "container": "container"
     })
 
     <!-- WELCOME
@@ -90,7 +86,7 @@
 
                 <!-- Preheading -->
                 <div class="text-center mb-3">
-                  <span class="badge badge-pill badge-primary-soft">
+                  <span class="badge text-uppercase text-primary font-weight-bold">
                     <span class="h6 text-uppercase">Cooby Free</span>
                   </span>
                 </div>
@@ -152,7 +148,7 @@
 
                 <!-- Preheading -->
                 <div class="text-center mb-3">
-                  <span class="badge badge-pill badge-primary-soft">
+                  <span class="badge text-uppercase text-primary font-weight-bold">
                     <span class="h6 text-uppercase">Cooby Plus</span>
                   </span>
                 </div>
@@ -226,7 +222,7 @@
 
                 <!-- Preheading -->
                 <div class="text-center mb-3">
-                  <span class="badge badge-pill badge-primary-soft">
+                  <span class="badge text-uppercase text-primary font-weight-bold">
                     <span class="h6 text-uppercase">Cooby Pro</span>
                   </span>
                 </div>
@@ -313,9 +309,7 @@
 
     <!-- FOOTER
     ================================================== -->
-    @@include("partials/footer.html", {
-      "classList": "bg-dark"
-    })
+    @@include("partials/footer.html")
 
     <!-- JAVASCRIPT
     ================================================== -->
