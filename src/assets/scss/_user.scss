@@ -11,14 +11,14 @@ body{
 	font-size:16px;
 	color:black;
 }
-.bg-cooby-1{
-	background-color:#280379 !important;
+.bg-cooby-indigo{
+	background-color:#5D04D9 !important;
 }
-.bg-cooby-2{
-	background-color:#2F026D !important;
+.bg-cooby-green{
+	background-color:#06BF9D !important;
 }
-.bg-cooby-3{
-	background-color:#5f2179 !important;
+.bg-cooby-primary{
+	background-color:#5005F2 !important;
 }
 .bg-cooby-light-gray{
 	background-color:#F6F6F6 !important;
@@ -46,6 +46,8 @@ ul li{
 }
 .btn{
 	font-weight:500;
+	padding:15px 35px;
+	border-radius:30px;
 }
 .btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary.focus{
 	background-color:#5005F2;
