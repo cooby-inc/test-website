@@ -13972,10 +13972,15 @@ body.compensate-for-scrollbar {
     right: 0; } }
 
 body {
-  font-family: 'Rubik', sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: black; }
+
+.font-eng {
+  font-family: 'Rubik', sans-serif; }
+
+.font-tw {
+  font-family: 'Noto Sans TC', sans-serif; }
 
 .bg-cooby-indigo {
   background-color: #5D04D9 !important; }
