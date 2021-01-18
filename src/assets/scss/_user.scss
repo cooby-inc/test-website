@@ -51,10 +51,9 @@ ul li{
 }
 .btn{
 	font-weight:500;
-	padding:15px 35px;
 	border-radius:30px;
 }
-.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary.focus{
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle{
 	background-color:#5005F2;
 }
 
@@ -107,4 +106,16 @@ h3{
 }
 .dropdown-item.active, .dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus{
 	color:#5005F2;
+}
+@media (max-width: 991.98px){
+	.display-3{
+		font-size:30px;
+	}
+	.navbar-btn{
+		width:90%;
+	}
+	.price-mobile{
+		font-size:40px;
+		font-weight:400;
+	}
 }
