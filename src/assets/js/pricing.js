@@ -13,7 +13,7 @@
 
   var toggle = document.querySelector('[data-toggle="price"]');
   var DURATION = 1;
-  var BASE_URL = 'https://app.cooby.co/signup?lookup_key=';
+  var BASE_URL = 'https://web.cooby.co/signup?lookup_key=';
   //
   // Functions
   //
