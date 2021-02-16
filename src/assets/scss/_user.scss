@@ -119,3 +119,8 @@ h3{
 		font-weight:400;
 	}
 }
+@media (min-width: 992px)
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
