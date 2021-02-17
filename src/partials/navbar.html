@@ -60,14 +60,22 @@
       </ul>
       <ul class="navbar-nav ml-auto" style="margin-right: 1rem;">
         <li class="nav-item">
-          <a id="signInSignUp" href="https://web.cooby.co/en/sign-in?utm_source=website&utm_content=navbar" target="_blank">
+          <a id="signInSignUp"
+             href="https://web.cooby.co/en/sign-in?utm_source=website&utm_content=navbar"
+             target="_blank"
+             onclick="gaTracking('log_in', 'Log In', 'Navbar')"
+             >
             Log In
           </a>
         </li>
       </ul>
       <!-- Button -->
       <div class="text-center pb-md-0 pb-8">
-        <a class="navbar-btn btn btn-sm btn-primary lift" href="https://web.cooby.co/en/sign-up?utm_source=website&utm_content=navbar" data-toggle="smooth-scroll"  target="_blank">
+        <a class="navbar-btn btn btn-sm btn-primary lift"
+           href="https://web.cooby.co/en/sign-up?utm_source=website&utm_content=navbar"
+           data-toggle="smooth-scroll"
+           target="_blank"
+           onclick="gaTracking('sign_up', 'Sign Up', 'Navbar')">
           Sign Up
         </a>
       </div>

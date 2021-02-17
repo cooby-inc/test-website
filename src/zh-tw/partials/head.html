@@ -21,13 +21,13 @@
 
   gtag('config', 'UA-58041205-5');
 
-  function signUpTracking(category, label, numeric_value) {
-  gtag('event', "sign_up", {
-  'event_category': category,
-  'event_label': label,
-  'value': numeric_value
-  });
-}
+  function gaTracking(event_name, category, label, numeric_value) {
+    gtag('event', event_name, {
+    'event_category': category,
+    'event_label': label,
+    'value': numeric_value
+    });
+  }
 </script>
 
 
