@@ -13,7 +13,7 @@
 
   var toggle = document.querySelector('[data-toggle="price"]');
   var DURATION = 1;
-  var BASE_URL = 'https://web.cooby.co/zh-Hant/sign-up?utm_source=website&utm_content=pricingPage';
+  var BASE_URL = 'http://cooby.app.link/LwlQVmaL6db?utm_content=pricingPage&lookup_key=';
   //
   // Functions
   //
