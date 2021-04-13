@@ -14072,6 +14072,11 @@ h3 {
 .dropdown-item.active, .dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus {
   color: #5005F2; }
 
+.hero-responsive {
+  background-size: 55% auto;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+
 @media (max-width: 991.98px) {
   .display-3 {
     font-size: 30px; }
@@ -14079,7 +14084,9 @@ h3 {
     width: 90%; }
   .price-mobile {
     font-size: 40px;
-    font-weight: 400; } }
+    font-weight: 400; }
+  .hero-responsive {
+    background-size: 100% auto; } }
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
