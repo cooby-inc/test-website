@@ -12,6 +12,23 @@
       return false;
     }
   </script>
+  <style>
+    .table-container {
+      table-layout: fixed;
+      width: 100%;
+      display: table;
+    }
+    .left-part, .center-part, .right-part {
+      display: table-cell;
+    }
+    .right-part {
+      text-align: left;
+    }
+    .cetner-part {
+      width: 140px;
+      text-align: center;
+    }
+  </style>
   <body class="font-eng">
 
 
@@ -96,10 +113,14 @@
           </div>
           <div class="col-12 col-md-10 col-lg-7 text-center pt-md-8">
             <p>
-              <div href="" class="btn btn-primary mr-1 lift"
-                onclick="showInsightPopup()"
-              >
-                Try it now
+              <div id="try-btn-and-aux-text" class="table-container">
+                <div class="left-part"></div>
+                <div class="center-part">
+                  <a href="localhost:300/en/app/report/terms" target="_blank"
+                    class="btn btn-primary lift"
+                  >Try it now</a>
+                </div>
+                <div class="right-part" style="color: #C600B2;">Get your free reports</div>
             </div>
             </p>
           </div>
