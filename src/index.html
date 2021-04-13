@@ -5,6 +5,13 @@
     "pageTitle": "Cooby | Customer Platform Built for Messaging"
     })
   </head>
+  <script>
+    function showInsightPopup (e) {
+      const blockBackground = document.getElementById('block-background');
+      blockBackground.style.display = "flex";
+      return false;
+    }
+  </script>
   <body class="font-eng">
 
 
@@ -62,8 +69,15 @@
     </section>
 
 
-<!-- ABOUT
+<!-- INSIGHT
     ================================================== -->
+    <div id="block-background"
+    style="display:none; top:0; left: 0; bottom: 0; right: 0; position: fixed; width: 100%; height: 100%; 
+    background-color: rgba(255, 255, 255, 0.5); z-index: 5000; justify-content: center; align-items: center;">
+      <div id='iframe-holder' style="background-color: white;">
+        <iframe src="http://localhost:3000/en/app/report" width="800" height="600"></iframe>
+      </div>
+    </div>
     <section class="pt-md-8 pb-8 pt-12">
       <div class="container">
         <div class="row justify-content-center">
@@ -80,11 +94,13 @@
               Take a glance of your client conversations on WhatsApp. Understand where and who you spend the most time for. Optimize your efforts to focus on the most important things. </span>
             </p>
           </div>
-          <div class="col-12 col-md-10 col-lg-7 text-center pt-md-8" data-aos="fade-left">
+          <div class="col-12 col-md-10 col-lg-7 text-center pt-md-8">
             <p>
-              <a href="" class="btn btn-primary mr-1 lift" data-toggle="smooth-scroll">
-                Try it now <i class="fe fe-arrow-right ml-3"></i>
-              </a>
+              <div href="" class="btn btn-primary mr-1 lift"
+                onclick="showInsightPopup()"
+              >
+                Try it now
+            </div>
             </p>
           </div>
         </div> <!-- / .row -->
