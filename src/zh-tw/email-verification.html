@@ -1,8 +1,15 @@
 <html lang="en">
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    @@include("partials/head.html", {
+    "pageTitle": "Cooby | Customer Platform Built for Messaging"
+    })       
     </head>    
-    <body>
+    <body  class="font-tw">
+    <!-- Brand -->
+    <div class="navbar-light bg-white container container" style="padding-top:30px;">
+    <a class="navbar-brand" href="index.html">
+      <img src="@@webRoot/assets/img/brand.svg" class="navbar-brand-img" alt="...">
+    </a>
         <script>
             $(function() {
                 console.log( "ready!" );
@@ -61,5 +68,8 @@
                 </div>
             </div>
         </div>
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
     </body>
 </html>
