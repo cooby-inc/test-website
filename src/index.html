@@ -13,21 +13,11 @@
     }
   </script>
   <style>
-    .table-container {
-      table-layout: fixed;
-      width: 100%;
-      display: table;
+    #cooby-insight-btn-and-ps {
+      justify-content: center;
+      width: 260px;
     }
-    .left-part, .center-part, .right-part {
-      display: table-cell;
-    }
-    .right-part {
-      text-align: left;
-    }
-    .cetner-part {
-      width: 140px;
-      text-align: center;
-    }
+
   </style>
   <body class="font-eng">
 
@@ -95,34 +85,36 @@
         <iframe src="http://localhost:3000/en/app/report" width="800" height="600"></iframe>
       </div>
     </div>
-    <section class="pt-md-8 pb-8 pt-12">
+    <section class="pt-md-8 pb-8 pt-12 bg-cooby-light-gray">
       <div class="container">
         <div class="row justify-content-center">
-           <div class="col-12 col-md-10 col-lg-8 text-center">
-            <!-- Heading -->
-            <h1 class="font-weight-bold">
-              Get your Client Relationship Report for WhatsApp
-            </h1>
-          </div>
-
-          <div class="col-12 col-md-10 col-lg-7 text-center pt-md-8">
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-7">
-              Take a glance of your client conversations on WhatsApp. Understand where and who you spend the most time for. Optimize your efforts to focus on the most important things. </span>
-            </p>
-          </div>
-          <div class="col-12 col-md-10 col-lg-7 text-center pt-md-8">
-            <p>
-              <div id="try-btn-and-aux-text" class="table-container">
-                <div class="left-part"></div>
-                <div class="center-part">
-                  <a href="localhost:300/en/app/report/terms" target="_blank"
-                    class="btn btn-primary lift"
-                  >Try it now</a>
+          <div class="col-12 col-md-6 pt-12" data-aos="fade-right">
+            <div>
+              <h1 class="font-weight-bold">
+                Get your Client Relationship Report for WhatsApp
+              </h1>
+            </div>            
+            <div id="try-btn-and-aux-text" class="table-container">
+              <p class="font-size-lg text-muted mb-7">
+                Take a glance of your client conversations on WhatsApp. Understand where and who you spend the most time for. Optimize your efforts to focus on the most important things. </span>
+              </p>
+              <section id='cooby-insight-btn-and-ps' 
+                class="d-flex flex-column justify-content-center">
+                <div>
+                  <a href="localhost:3000/en/app/insight" target="_blank"
+                    class="btn btn-primary lift mb-3"
+                  >Get Your Free Report Now</a>
                 </div>
-                <div class="right-part" style="color: #C600B2;">Get your free reports</div>
+                <div id='ps' style="color: #06BF9D; font-size: 12px; text-align: center;">
+                  *No signup required
+                </div>
+              </section> 
             </div>
-            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="assets/img/illustrations/cooby_insight_trailer.png" 
+              alt="..." class="img-fluid mw-100 mw-md-130 mb-6 mb-md-0" 
+              data-aos="fade-left">
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
