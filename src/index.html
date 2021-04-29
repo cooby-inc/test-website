@@ -17,6 +17,12 @@
       justify-content: center;
       width: 260px;
     }
+   
+    @media screen and (max-width: 320px){
+      #insight_bz_0 {
+        flex-direction: column-reverse;
+      }
+    }  
 
   </style>
   <body class="font-eng">
@@ -87,9 +93,9 @@
     </div>
     <section class="pt-md-8 pb-8 pt-12 bg-cooby-light-gray">
       <div class="container">
-        <div class="row justify-content-center">
+        <div id='insight_bz_0' class="row justify-content-center">
           <div class="col-12 col-md-6 pt-12" data-aos="fade-right">
-            <div>
+            <div id='insight_bz0_slogan'>
               <h1 class="font-weight-bold">
                 Get your Client Relationship Report for WhatsApp
               </h1>
@@ -101,7 +107,7 @@
               <section id='cooby-insight-btn-and-ps' 
                 class="d-flex flex-column justify-content-center">
                 <div>
-                  <a href="localhost:3000/en/app/insight" target="_blank"
+                  <a href="https://cooby-web-app-staging.herokuapp.com/en/insight"
                     class="btn btn-primary lift mb-3"
                   >Get Your Free Report Now</a>
                 </div>
