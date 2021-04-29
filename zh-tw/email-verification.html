@@ -1,0 +1,192 @@
+<html lang="en">
+    <head>
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-WL6BVRR"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Cooby | Customer Platform Built for Messaging" />
+    <meta property="og:image" content="https://cooby.co/assets/img/preview-images/meta_tags_zh.jpg" />
+
+    <meta property="og:url" content="https://cooby.co" />
+    <meta property="og:description" content="一起跟 Cooby 用簡單上手的 Gmail / Line 訊息整合工具，連結每一段美好的客戶關係。" />
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58041205-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-58041205-5');
+
+      function gaTracking(event_name, category, label, numeric_value) {
+        gtag('event', event_name, {
+        'event_category': category,
+        'event_label': label,
+        'value': numeric_value
+        });
+      }
+    </script>
+
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="../assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="../assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="../assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="../assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="../assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="../assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="../assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="../assets/libs/quill/dist/quill.core.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../assets/css/theme.min.css">
+
+    <title>Cooby | Customer Platform Built for Messaging</title>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '737261203712366');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=737261203712366&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+       
+    </head>    
+    <body  class="font-tw">
+    <!-- Brand -->
+    <div class="navbar-light bg-white container container" style="padding-top:30px;">
+    <a class="navbar-brand" href="index.html">
+      <img src="../assets/img/brand.svg" class="navbar-brand-img" alt="...">
+    </a>
+        <script>
+            $(function() {
+                console.log( "ready!" );
+                var urlParams = new URLSearchParams(window.location.search);
+                var code = urlParams.get('code');
+                var email = urlParams.get('email');
+                var has_env = urlParams.has('env');
+                var api_endpoint = has_env ? 'api-staging.cooby.co' : 'api.cooby.co';
+                $.ajax({
+                url: "https://" + api_endpoint + "/users/email:verify",
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({
+                    validation_code: code,
+                    email: email
+                })})
+                .done(function() {
+                    var title = "Email認證成功！";
+                    var text = "您的email:" + email + "已成功認證，回到Cooby輕鬆管理客戶關係吧！";
+                    $("#verify-title").text(title);
+                    $("#verify-text").text(text);
+                    console.log( "success" );
+                })
+                .fail(function(jqXHR, textStatus, errorThrown) {
+                    console.log(jqXHR.status);
+                    console.log( "error" );
+                    var title = "Email認證失敗！";
+                    var text = "認證失敗，請重新再試一次或洽詢客服。";
+                    if (jqXHR.status == 404) {
+                        text = "您的email:" + email + "從未註冊過。"
+                    } else if (jqXHR.status == 409) {
+                        title = "Email認證成功！";
+                        text = "您的email:" + email + "已經驗證過了!"
+                    }
+                    $("#verify-title").text(title);
+                    $("#verify-text").text(text);
+                });
+            });
+        </script>
+        <div class="container">
+            <div class="row align-items-center text-center text-md-left">
+                <div class="col-12 col-md-6">
+                    <h3 id="verify-title">認證Email中...</h3>
+                    <p id="verify-text">認證中...</p>
+                    <div data-aos="fade-left">
+                        <a href="https://web.cooby.co/" class="btn btn-primary mr-1 lift" data-toggle="smooth-scroll">
+                            回到Cooby <i class="fe fe-arrow-right ml-3"></i>
+                        </a>
+                                                                                      <a href="../features" class="btn btn-primary-soft lift">
+                                                                                                          Learn more
+                                                                                                                        </a>
+                                                                                                                                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="assets/img/illustrations/home_banner.png" alt="..." class="img-fluid mw-100 mw-md-130 float-right mb-6 mb-md-0" data-aos="fade-right">
+                </div>
+            </div>
+        </div>
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="../assets/libs/aos/dist/aos.js"></script>
+    <script src="../assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="../assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="../assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="../assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="../assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="../assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="../assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="../assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="../assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="../assets/libs/quill/dist/quill.min.js"></script>
+    <script src="../assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="../assets/libs/typed.js/lib/typed.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="../assets/js/theme.min.js"></script>
+
+    <!-- External Lib -->
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+    <script type="text/javascript">
+        window.__be = window.__be || {};
+        window.__be.id = "600157073ec25b0008ecbebe";
+        (function() {
+            var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+            be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+        })();
+
+        window.BE_API = window.BE_API || {};
+
+        function openChatbotWindow() {
+          window.BE_API.openChatWindow();
+        }
+
+    </script>
+    <!-- End of ChatBot code -->
+
+    </body>
+</html>
