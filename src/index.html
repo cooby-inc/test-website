@@ -5,6 +5,26 @@
     "pageTitle": "Cooby | Customer Platform Built for Messaging"
     })
   </head>
+  <script>
+    function showInsightPopup (e) {
+      const blockBackground = document.getElementById('block-background');
+      blockBackground.style.display = "flex";
+      return false;
+    }
+  </script>
+  <style>
+    #cooby-insight-btn-and-ps {
+      justify-content: center;
+      width: 260px;
+    }
+   
+    @media screen and (max-width: 320px){
+      #insight_bz_0 {
+        flex-direction: column-reverse;
+      }
+    }  
+
+  </style>
   <body class="font-eng">
 
 
@@ -62,6 +82,49 @@
     </section>
 
 
+<!-- INSIGHT
+    ================================================== -->
+    <div id="block-background"
+    style="display:none; top:0; left: 0; bottom: 0; right: 0; position: fixed; width: 100%; height: 100%; 
+    background-color: rgba(255, 255, 255, 0.5); z-index: 5000; justify-content: center; align-items: center;">
+      <div id='iframe-holder' style="background-color: white;">
+        <iframe src="http://localhost:3000/en/app/report" width="800" height="600"></iframe>
+      </div>
+    </div>
+    <section class="pt-md-8 pb-8 pt-12 bg-cooby-light-gray">
+      <div class="container">
+        <div id='insight_bz_0' class="row justify-content-center">
+          <div class="col-12 col-md-6 pt-12" data-aos="fade-right">
+            <div id='insight_bz0_slogan'>
+              <h1 class="font-weight-bold">
+                Get your Client Relationship Report for WhatsApp
+              </h1>
+            </div>            
+            <div id="try-btn-and-aux-text" class="table-container">
+              <p class="font-size-lg text-muted mb-7">
+                Take a glance of your client conversations on WhatsApp. Understand where and who you spend the most time for. Optimize your efforts to focus on the most important things. </span>
+              </p>
+              <section id='cooby-insight-btn-and-ps' 
+                class="d-flex flex-column justify-content-center">
+                <div>
+                  <a href="https://cooby-web-app-staging.herokuapp.com/en/insight"
+                    class="btn btn-primary lift mb-3"
+                  >Get Your Free Report Now</a>
+                </div>
+                <div id='ps' style="color: #06BF9D; font-size: 12px; text-align: center;">
+                  *No signup required
+                </div>
+              </section> 
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="assets/img/illustrations/cooby_insight_trailer.png" 
+              alt="..." class="img-fluid mw-100 mw-md-130 mb-6 mb-md-0" 
+              data-aos="fade-left">
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
 
     <!-- ABOUT
     ================================================== -->
