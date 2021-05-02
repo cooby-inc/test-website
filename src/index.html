@@ -106,10 +106,10 @@
               </p>
               <section id='cooby-insight-btn-and-ps' 
                 class="d-flex flex-column justify-content-center">
-                <div>
-                  <a href="https://cooby-web-app-staging.herokuapp.com/en/insight"
+                <div id='BZ0_entry_button' onclick="onBZ0EntryButtonClick()">
+                  <span
                     class="btn btn-primary lift mb-3"
-                  >Get Your Free Report Now</a>
+                  >Get Your Free Report Now</span>
                 </div>
                 <div id='ps' style="color: #06BF9D; font-size: 12px; text-align: center;">
                   *No signup required
@@ -124,6 +124,14 @@
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
+      <div id='BZ0_popup_if_mobile'>
+        <div id='BZ0_popup_main_content'>
+          <div class='title'>Prepare another device to continue</div>
+          <div class='explain'>If you are currently using the phone with your primary WhatsApp account. Please open <span class='url-green'>cooby.co</span> on another device.</div>
+          <div class='explain-img'><img src="@@webRoot/assets/img/illustrations/BZ0IfMobileTutorial.svg"/></div>
+          <div class='got-it-button btn btn-primary lift mb-3' onClick="closeBZ0Popup()">Got it</div>
+        </div>
+      </div>
     </section>
 
     <!-- ABOUT
