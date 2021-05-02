@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+    "pageTitle": "Cooby | Customer Platform Built for Messaging"
+    })
+  </head>
+  <script>
+    function showInsightPopup (e) {
+      const blockBackground = document.getElementById('block-background');
+      blockBackground.style.display = "flex";
+      return false;
+    }
+  </script>
+  <style>
+    #cooby-insight-btn-and-ps {
+      justify-content: center;
+      width: 260px;
+    }
+   
+    @media screen and (max-width: 320px){
+      #insight_bz_0 {
+        flex-direction: column-reverse;
+      }
+    }  
+
+  </style>
+  <body class="font-eng">
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light bg-white",
+    "container": "container"
+    })
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="position-relative pt-14 pt-md-14 mt-n10" id='welcome'>
+
+      <!-- Shape -->
+      <div class="d-none shape shape-fluid-x shape-blur-2 svg-shim text-light">
+        @@include("assets/img/shapes/blurs/blur-2.svg")
+      </div>
+      <!-- Content -->
+      <div class="container">
+        <div class="row align-items-center text-center text-md-left">
+          <div class="col-12 col-md-6">
+
+            <!-- Image -->
+            <img src="assets/img/illustrations/home_banner.png" alt="..." class="img-fluid mw-100 mw-md-130 float-right mb-6 mb-md-0" data-aos="fade-right">
+
+          </div>
+          <div class="col-12 col-md-6">
+
+            <!-- Heading -->
+            <h1 class="display-3 font-weight-bold">
+              <div data-aos="fade-left">Customer Platform</div>
+              <div data-aos="fade-left" data-aos-delay="100">Built for Messaging</div>
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-6" data-aos="fade-left" data-aos-delay="200">
+              Find inner peace in your messaging apps. Put your customers at ease. Use Cooby with Line and Gmail.
+            </p>
+
+            <!-- Buttons -->
+            <div data-aos="fade-left">
+              <a href="http://cooby.app.link/LwlQVmaL6db?utm_content=clickHeroBtn" class="btn btn-primary mr-1 lift" data-toggle="smooth-scroll" onclick="gaTracking('sign_up', 'click', 'clickHeroBtn')">
+                Start for free <i class="fe fe-arrow-right ml-3"></i>
+              </a>
+              <a href="@@webRoot/features" class="btn btn-primary-soft lift">
+                Learn more
+              </a>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+
+<!-- INSIGHT
+    ================================================== -->
+    <div id="block-background"
+    style="display:none; top:0; left: 0; bottom: 0; right: 0; position: fixed; width: 100%; height: 100%; 
+    background-color: rgba(255, 255, 255, 0.5); z-index: 5000; justify-content: center; align-items: center;">
+      <div id='iframe-holder' style="background-color: white;">
+        <iframe src="http://localhost:3000/en/app/report" width="800" height="600"></iframe>
+      </div>
+    </div>
+    <section class="pt-md-8 pb-8 pt-12 bg-cooby-light-gray">
+      <div class="container">
+        <div id='insight_bz_0' class="row justify-content-center">
+          <div class="col-12 col-md-6 pt-12" data-aos="fade-right">
+            <div id='insight_bz0_slogan'>
+              <h1 class="font-weight-bold">
+                Get your Client Relationship Report for WhatsApp
+              </h1>
+            </div>            
+            <div id="try-btn-and-aux-text" class="table-container">
+              <p class="font-size-lg text-muted mb-7">
+                Take a glance of your client conversations on WhatsApp. Understand where and who you spend the most time for. Optimize your efforts to focus on the most important things. </span>
+              </p>
+              <section id='cooby-insight-btn-and-ps' 
+                class="d-flex flex-column justify-content-center">
+                <div id='BZ0_entry_button' onclick="onBZ0EntryButtonClick()">
+                  <span
+                    class="btn btn-primary lift mb-3"
+                  >Get Your Free Report Now</span>
+                </div>
+                <div id='ps' style="color: #06BF9D; font-size: 12px; text-align: center;">
+                  *No signup required
+                </div>
+              </section> 
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="assets/img/illustrations/cooby_insight_trailer.png" 
+              alt="..." class="img-fluid mw-100 mw-md-130 mb-6 mb-md-0" 
+              data-aos="fade-left">
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <div id='BZ0_popup_if_mobile'>
+        <div id='BZ0_popup_main_content'>
+          <div class='title'>Prepare another device to continue</div>
+          <div class='explain'>If you are currently using the phone with your primary WhatsApp account. Please open <span class='url-green'>cooby.co</span> on another device.</div>
+          <div class='explain-img'><img src="@@webRoot/assets/img/illustrations/BZ0IfMobileTutorial.svg"/></div>
+          <div class='got-it-button btn btn-primary lift mb-3' onClick="closeBZ0Popup()">Got it</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT
+    ================================================== -->
+    <section class="pt-md-8 pb-8 pt-12">
+      <div class="container">
+        <div class="row justify-content-center">
+           <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-primary font-weight-bold">
+              Sell with ease
+            </h6>
+
+
+            <!-- Heading -->
+            <h1 class="font-weight-bold">
+              Contact, Engage<br>and Nurture Customers
+            </h1>
+            <div class="row">
+          <div class="col-12 order-md-2">
+
+            <!-- Macbook + iPhone -->
+            <div class="device-combo device-combo-macbook-iphonex mb-6 mb-md-0">
+
+              <!-- Macbook -->
+              <div class="device device-macbook">
+                <img src="assets/img/screenshots/desktop/profile_eng.jpg" class="device-screen" alt="...">
+                <img src="assets/img/devices/macbook.svg" class="img-fluid" alt="...">
+              </div>
+
+              <!-- iPhone -->
+              <div class="device device-iphonex">
+                <img src="assets/img/screenshots/mobile/tasks_eng.jpg" class="device-screen" alt="...">
+                <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
+              </div>
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+          </div>
+
+            <!-- Card -->
+            <div class="card-group">
+              <div class="card">
+                <div class="card-body shadow-light-lg">
+
+                  <!-- Text -->
+                  <p class="text-center text-muted mb-0">
+                    100+ red badge number waiting for you every morning?
+                  </p>
+
+                </div>
+              </div>
+              <div class="card border-left">
+                <div class="card-body shadow-light-lg">
+
+                  <!-- Text -->
+                  <p class="text-center text-muted mb-0">
+                    Missed a client request or a file lost in messaging threads?
+                  </p>
+
+                </div>
+              </div>
+              <div class="card border-left">
+                <div class="card-body shadow-light-lg">
+
+                  <!-- Text -->
+                  <p class="text-center text-muted mb-0">
+                    Forgot whether an important piece of info was in emails or messages?
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          <div class="col-12 col-md-10 col-lg-7 text-center pt-md-8">
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-7">
+              Focus on what matters the most: build enduring customer relationships. Win clients for life with Cooby.<br> <span class="text-primary">Cooby is right for you &hearts;. It’s simple, useful, and efficient. </span>
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+   <!-- TARGET AUDIENCE
+    ================================================== -->
+    <section class="py-8 py-md-11 bg-cooby-light-gray">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7 text-center">
+
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-primary font-weight-bold">
+              FOCUS ON CUSTOMERS
+            </h6>
+
+            <!-- Heading -->
+            <h1 class="font-weight-bold">
+              Built to Empower Customer-Centric Businesses
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-7 mb-md-9">
+              Each customer is different.<br>Cooby lets you cater to their unique needs.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="form-row">
+          <div class="col-12 col-lg-6 d-lg-flex pb-1 mb-4">
+
+            <!-- Card -->
+            <div class="card shadow-light-lg overflow-hidden" data-aos="fade-up">
+              <div class="row">
+                <div class="col-md-4 position-relative">
+
+                  <!-- Image -->
+                  <img src="assets/img/illustrations/profeesional_services.jpg" class="h-75 position-absolute right-0 mt-7 mr-n4" alt="...">
+
+                </div>
+                <div class="col-md-8">
+
+                  <!-- Body -->
+                  <div class="card-body py-7 py-md-9 text-center">
+
+                    <!-- Heading -->
+                    <h3 class="font-weight-bold">
+                      Professional Services
+                    </h3>
+
+                    <!-- Text -->
+                    <p class="text-muted mb-0">
+                      Lawyers, accountants, architects, etc use Cooby to view all contact histories across all channels in one place.
+                    </p>
+
+                  </div>
+
+                </div>
+              </div> <!-- / .row -->
+            </div>
+
+          </div>
+          <div class="col-12 col-lg-6 d-lg-flex pb-1 mb-4">
+
+            <!-- Card -->
+            <div class="card shadow-light-lg overflow-hidden text-center" data-aos="fade-up">
+              <div class="row">
+                <div class="col-md-8">
+
+                  <!-- Body -->
+                  <div class="card-body py-7 py-md-9">
+
+                    <!-- Heading -->
+                    <h3 class="font-weight-bold">
+                      Agencies and Consultancies
+                    </h3>
+
+                    <!-- Text -->
+                    <p class="text-muted mb-0">
+                      Marketing agencies, headhunters, etc use Cooby to track everything in messaging apps.
+                    </p>
+
+                  </div>
+
+                </div>
+                <div class="col-md-4">
+
+                  <!-- Image -->
+                  <img src="assets/img/illustrations/agencies_and_consultancies.jpg" class="h-75 position-absolute left-0 mt-7" alt="...">
+
+                </div>
+              </div> <!-- / .row -->
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Card -->
+            <div class="card shadow-light-lg overflow-hidden text-center text-lg-left" data-aos="fade-up">
+              <div class="row">
+                <div class="col-md-4 position-relative">
+
+                  <!-- Image -->
+                  <img src="assets/img/illustrations/relationship_focused_sales.jpg" class="h-75 position-absolute right-0 mt-6" alt="...">
+
+                </div>
+                <div class="col-md-8">
+
+                  <!-- Body -->
+                  <div class="card-body py-7 py-md-9">
+
+                    <!-- Heading -->
+                    <h3 class="font-weight-bold">
+                      Relationship-Focused Sales
+                    </h3>
+
+                    <!-- Text -->
+                    <p class="text-muted mb-0">
+                      Insurance agents and real estate agents use Cooby to build lifelong relationships with clients.
+                    </p>
+
+                  </div>
+
+                </div>
+              </div> <!-- / .row -->
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ==================================================
+    <div class="position-relative">
+      <div class="shape shape-top shape-fluid-x svg-shim text-white">
+        @@include("assets/img/shapes/waves/wave-1.svg")
+      </div>
+    </div>
+
+    <!-- VIDEO >Will activate this section when we have video
+    ==================================================
+    <section class="py-12 py-md-13 bg-cover" style="background-image: url(assets/img/covers/cover-2.jpg);">
+      <div class="container py-md-13">
+        <div class="row">
+          <div class="col-12 text-center">
+
+            <!-- Button
+            <a href="https://www.youtube.com/watch?v=9I-Y6VQ6tyI" class="btn btn-pill btn-white text-body shadow lift" data-fancybox>
+              <span class="h6 text-uppercase font-weight-bold"><i class="fe fe-play mr-2"></i> Watch video</span>
+            </a>
+
+          </div>
+        </div> <!-- / .row
+      </div> <!-- / .container
+    </section>-->
+
+    <!-- ABOUT
+    ================================================== -->
+    <section id="product" class='px-2 pb-8 pb-md-6'>
+      <div class="container border-bottom-cooby pb-8">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-md-6 col-lg-5 order-md-2">
+
+            <!-- Image grid -->
+            <div class="d-flex flex-column w-md-130 mb-6 mb-md-0">
+
+              <!-- Image -->
+              <img class="img-fluid rounded shadow align-self-start" data-jarallax-element="-20" src="assets/img/screenshots/ui/product_1.png" alt="..." style="min-height: 1px; max-width: 50%; margin-left: 40%;">
+
+              <!-- Image -->
+              <img class="img-fluid rounded shadow align-self-start" data-jarallax-element="-50" src="assets/img/screenshots/ui/product_2.jpg" alt="..." style="min-height: 1px; max-width: 50%; margin-top: -35%;">
+
+              <!-- Image -->
+              <img class="d-none img-fluid rounded shadow align-self-center" data-jarallax-element="-80" src="assets/img/screenshots/ui/product_3.png" alt="..." style="min-height: 1px; max-width: 50%; margin-top: -20%;">
+
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 order-md-1 pt-md-8">
+
+            <!-- Heading -->
+            <h1 class="font-weight-bold">
+              Manage Your Customer Relationships in a Breeze
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-6">
+              Cooby provides a simple, easy-to-use CRM platform that greatly simplifies the sales process and accelerates customer development.
+            </p>
+
+            <!-- List -->
+            <div class="row">
+              <div class="col-12 col-lg-6">
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    Client Database
+                  </p>
+
+                </div>
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <p>
+                    All Sales Activities
+                  </p>
+
+                </div>
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <p>
+                    Quick Notes
+                  </p>
+
+                </div>
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    Trackable Tasks
+                  </p>
+
+                </div>
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-success-soft mr-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    Sales Suggestions
+                  </p>
+
+                </div>
+
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-success-soft mr-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    Client Reminders
+                  </p>
+
+                </div>
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-success-soft mr-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    Lightning Fast Search
+                  </p>
+
+                </div>
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-success-soft mr-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    Smart Import from Line
+                  </p>
+
+                </div>
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-success-soft mr-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    File Attachments
+                  </p>
+
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- INTEGRATIONS
+    ================================================== -->
+    <section class="d-none bg-dark py-8 py-md-13">
+      <div class="container ">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-warning">與你最常用的軟體整合</h6>
+
+            <!-- Heading -->
+            <h1 class="font-weight-bold text-white">
+              從 Cooby 連結到所有軟體
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-9">
+              通訊、地圖、行事曆，輕鬆串接
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 text-center">
+
+            <!-- Icon -->
+            <div class="icon icon-lg mb-4">
+              <img style='height: 60px' src='assets/img/brands/logomark/line.png' class="img-fluid">
+            </div>
+
+            <!-- Heading -->
+            <h3 class="font-weight-bold text-white">
+              Line
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-8">
+              預設訊息、傳檔案
+            </p>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 text-center">
+
+            <!-- Icon -->
+            <div class="icon icon-lg mb-4">
+              @@include("assets/img/brands/logomark/google_map.svg")
+            </div>
+
+            <!-- Heading -->
+            <h3 class="font-weight-bold text-white">
+              Google 地圖
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-8 mb-lg-0">
+              順路拜訪、客戶地圖
+            </p>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 text-center">
+
+            <!-- Icon -->
+            <div class="icon icon-lg mb-4">
+              @@include("assets/img/brands/logomark/google_calendar.svg")
+            </div>
+
+            <!-- Heading -->
+            <h3 class="font-weight-bold text-white">
+              Google 行事曆
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-8 mb-md-0">
+              與你的行事曆同步
+            </p>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 text-center">
+
+            <!-- Icon -->
+            <div class="icon icon-lg mb-4">
+              @@include("assets/img/brands/logomark/contacts-ios.svg")
+            </div>
+
+            <!-- Heading -->
+            <h3 class="font-weight-bold text-white">
+              iPhone 通訊錄
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-8 mb-lg-0">
+              自動從通訊錄輸入客戶資料
+            </p>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 text-center">
+
+            <!-- Icon -->
+            <div class="icon icon-lg mb-4">
+              @@include("assets/img/brands/logomark/excel.svg")
+            </div>
+
+            <!-- Heading -->
+            <h3 class="font-weight-bold text-white">
+              Excel
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-8 mb-md-0">
+              從Excel自動匯入客戶資料
+            </p>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 text-center">
+
+            <!-- Icon -->
+            <div class="icon icon-lg mb-4">
+              @@include("assets/img/brands/logomark/atlassian.svg")
+            </div>
+
+            <!-- Heading -->
+            <h3 class="font-weight-bold text-white">
+              保單系統
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-0">
+              與保單系統整合
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+<!-- NEWS
+    ================================================== -->
+    <section class="pb-8">
+      <div class="container">
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-primary font-weight-bold text-center pb-3">
+              Our News
+            </h6>
+
+        <div class="flickity-viewport-visible" data-flickity='{"imagesLoaded": true, "initialIndex": 6, "pageDots": false, "prevNextButtons": false, "contain": true}'>
+
+          <!-- Brand -->
+          <div class="col-5 col-md-2 pt-3">
+            
+            <a href="https://www.techinasia.com/exfacebook-execs-startup-raises-preseed-sequoias-surge" target="_blank"><div class="img-fluid">
+              <img src="assets/img/brands/tech-in-asia-logo-vector.png">
+            </div></a>
+          </div>
+          <!-- Brand -->
+          <div class="col-5 col-md-2 pt-2">
+            
+           <a href="https://meet-global.bnext.com.tw/articles/view/47329" target="_blank"> 
+            <div class="img-fluid">
+              <img src="assets/img/brands/meet_global.png">
+            </div></a>
+          </div>
+        </div>
+      </div> <!-- / .container -->
+    </section>
+
+<!-- BRANDS
+    ================================================== -->
+    <section class="pb-6">
+      <div class="container">
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-primary font-weight-bold text-center pb-3">
+              Backed by World-Class Investors
+            </h6>
+
+        <div class="flickity-viewport-visible" data-flickity='{"imagesLoaded": true, "initialIndex": 6, "pageDots": false, "prevNextButtons": false, "contain": true}'>
+
+          <!-- Brand -->
+          <div class="col-4 col-md-3 col-lg-2">
+            
+            <a href="https://www.surgeahead.com/" target="_blank"><div class="img-fluid">
+              <img src="assets/img/brands/logotype/surge_logo.png">
+            </div></a>
+          </div>
+          <!-- Brand -->
+          <div class="col-4 col-md-3 col-lg-2">
+            
+           <a href="https://www.pear.vc/" target="_blank"> 
+            <div class="img-fluid">
+              <img src="assets/img/brands/logotype/pear_logo.png">
+            </div></a>
+          </div>
+          <!-- Brand -->
+          <div class="col-4 col-md-3 col-lg-2">
+           <a href="https://www.hustlefund.vc/" target="_blank">
+            <div class="img-fluid">
+              <img src="assets/img/brands/logotype/hustle_fund_logo.png">
+            </div></a>
+          </div>
+        </div>
+      </div> <!-- / .container -->
+    </section>
+
+
+    <!-- CTA
+    ================================================== -->
+    <section class="pt-6 pt-md-8 bg-cooby-light-gray" id="try">
+      <div class="container pb-6 pb-md-8 border-bottom-cooby">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-8">
+
+            <!-- Heading -->
+            <h2 class="font-weight-bold mb-1">
+              Start For Free
+            </h2>
+
+            <!-- Text -->
+            <p style="padding-top:15px;" class="font-size-lg text-muted mb-5 mb-md-0">
+              Cooby is the only CRM you'll ever need. <br>
+              Join companies like Nanshan, Fubon, Cathay Life and hundreds of other salespeople using Cooby.
+            </p>
+
+          </div>
+          <div class="col-12 col-md-1"></div>
+          <div class="col-12 col-md-3">
+
+            <!-- Button -->
+            <a href="http://cooby.app.link/LwlQVmaL6db?utm_content=startForFree" class="btn btn-primary lift" target="_blank" onclick="gaTracking('sign_up', 'click', 'clickStartForFreeBtn')">
+              Try Now
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- CURVE
+    ================================================== -->
+    <div class="d-none position-relative mt-n16">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        @@include("assets/img/shapes/curves/curve-2.svg")
+      </div>
+    </div>
+
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="d-none position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+    <!--@@include("partials/footer.html", {
+    "classList": "bg-gray-200"
+    })-->
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+  </body>
+</html>
