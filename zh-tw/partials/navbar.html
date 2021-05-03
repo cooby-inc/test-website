@@ -20,7 +20,7 @@
       </button>
 
       <!-- Navigation -->
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto" style="margin:auto;">
         <li class="nav-item">
           <a class="nav-link" id="navbarProduct" href="../../zh-tw/features.html" data-toggle="smooth-scroll">
             探索
@@ -32,11 +32,11 @@
             訂閱
           </a>
         </li>
-        <!--<li class="nav-item">
+        <li class="nav-item d-none">
           <a class="nav-link" id="navbarService" href="../../zh-tw/blog.html">
             部落格
           </a>
-        </li>-->
+        </li>
         <li class="nav-item">
           <a class="nav-link" id="navbarTeam" href="../../zh-tw/careers.html">
             徵才
@@ -57,11 +57,25 @@
           </div>
         </li>
       </ul>
+      <ul class="navbar-nav ml-auto" style="margin-right: 1rem;">
+        <li class="nav-item">
+          <a id="signInSignUp"
+             href="https://cooby.app.link/bKXOlo8f8db?utm_content=navbar"
+             target="_blank"
+             onclick="gaTracking('log_in', 'click', 'Navbar')">
+            登入
+          </a>
+        </li>
+      </ul>
       <!-- Button -->
-      <div class="ml-auto">
+      <div class="text-center pb-md-0 pb-8">
 
-        <a class="navbar-btn btn btn-sm btn-primary lift ml-3" href="../../zh-tw/#buy" data-toggle="smooth-scroll">
-          馬上試用
+        <a class="navbar-btn btn btn-sm btn-primary lift"
+           href="https://cooby.app.link/veJdQ60f8db?utm_content=navbar"
+           data-toggle="smooth-scroll"
+           target="_blank"
+           onclick="gaTracking('sign_up', 'click', 'Navbar')">
+          免費試用
         </a>
       </div>
 
