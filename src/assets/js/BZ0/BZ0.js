@@ -5,7 +5,7 @@ const onBZ0EntryButtonClick = () => {
     } else {
         window.location.replace("https://cooby-web-app-staging.herokuapp.com/en/insight");
     }
-}
+};
 const closeBZ0Popup = () => {
     document.getElementById(BZ0FullscreenId).style.display = 'none';
 }
