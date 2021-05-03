@@ -9,9 +9,10 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="Cooby 酷比 | 第一次使用就上手的客戶管理工具" />
-    <meta property="og:image" content="https://cooby.co/assets/img/cooby-app-logo-dark.png">
+    <meta property="og:image" content="https://cooby.co/assets/img/preview-images/meta_tags_zh.jpg" />
+
     <meta property="og:url" content="https://cooby.co" />
-    <meta property="og:description" content="厭倦商用軟體複雜難解的介面，追求簡單、好用、高效率，我們為保險業務個人設計一套客戶管理系統，Cooby 就如此誕生了。" />
+    <meta property="og:description" content="一起跟 Cooby 用簡單上手的 Gmail / Line 訊息整合工具，連結每一段美好的客戶關係。" />
 
 
 
@@ -24,13 +25,13 @@
 
       gtag('config', 'UA-58041205-5');
 
-      function signUpTracking(category, label, numeric_value) {
-      gtag('event', "sign_up", {
-      'event_category': category,
-      'event_label': label,
-      'value': numeric_value
-      });
-    }
+      function gaTracking(event_name, category, label, numeric_value) {
+        gtag('event', event_name, {
+        'event_category': category,
+        'event_label': label,
+        'value': numeric_value
+        });
+      }
     </script>
 
 
@@ -102,7 +103,7 @@
           </button>
 
           <!-- Navigation -->
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto" style="margin:auto;">
             <li class="nav-item">
               <a class="nav-link" id="navbarProduct" href="../zh-tw/features.html" data-toggle="smooth-scroll">
                 探索
@@ -114,11 +115,11 @@
                 訂閱
               </a>
             </li>
-            <!--<li class="nav-item">
+            <li class="nav-item d-none">
               <a class="nav-link" id="navbarService" href="../zh-tw/blog.html">
                 部落格
               </a>
-            </li>-->
+            </li>
             <li class="nav-item">
               <a class="nav-link" id="navbarTeam" href="../zh-tw/careers.html">
                 徵才
@@ -139,11 +140,25 @@
               </div>
             </li>
           </ul>
+          <ul class="navbar-nav ml-auto" style="margin-right: 1rem;">
+            <li class="nav-item">
+              <a id="signInSignUp"
+                 href="https://cooby.app.link/bKXOlo8f8db?utm_content=navbar"
+                 target="_blank"
+                 onclick="gaTracking('log_in', 'click', 'Navbar')">
+                登入
+              </a>
+            </li>
+          </ul>
           <!-- Button -->
-          <div class="ml-auto">
+          <div class="text-center pb-md-0 pb-8">
 
-            <a class="navbar-btn btn btn-sm btn-primary lift ml-3" href="../zh-tw/#buy" data-toggle="smooth-scroll">
-              馬上試用
+            <a class="navbar-btn btn btn-sm btn-primary lift"
+               href="https://cooby.app.link/veJdQ60f8db?utm_content=navbar"
+               data-toggle="smooth-scroll"
+               target="_blank"
+               onclick="gaTracking('sign_up', 'click', 'Navbar')">
+              免費試用
             </a>
           </div>
 
@@ -155,7 +170,7 @@
 
     <!-- WELCOME
     ================================================== -->
-    <section class="pt-12 pt-md-11 pb-6 pb-md-8 bg-cooby-primary">
+    <section class="pt-10 pt-md-11 pb-6 pb-md-8 bg-cooby-primary">
 
       <!-- Shape -->
       <div class="shape shape-blur-3 svg-shim text-white">
@@ -221,8 +236,11 @@
 
             <!-- Card -->
             <div class="card shadow-lg mb-6 mb-md-0">
+              <div style="background-color:white; width:100%; border-radius: 0.375rem 0.375rem 0 0; color:white; text-align:center;padding:10px;">
+                cooby free
+              </div>
               <div class="card-body">
-
+                <img src="assets/img/illustrations/price-1.svg">
                 <!-- Preheading -->
                 <div class="text-center mb-3">
                   <span class="badge text-uppercase text-primary font-weight-bold">
@@ -233,7 +251,7 @@
                 <!-- Price -->
                 <div class="d-flex justify-content-center">
                   <span class="h2 mb-0 mt-2">$</span>
-                  <span class="price display-2 mb-0" data-annual="0" data-monthly="0">0</span>
+                  <span class="price price-mobile mb-0 font-eng display-3" data-annual="0" data-monthly="0">0</span>
                   <span class="h2 align-self-end mb-1">/月</span>
                 </div>
 
@@ -271,7 +289,7 @@
                 </div>
 
                 <!-- Button -->
-                <a href="https://app.cooby.co/signup" class="mt-xl-8 btn btn-block btn-primary-soft" target="_blank"style="padding: 0.8125rem 1.25rem;">
+                <a href="https://cooby.app.link/veJdQ60f8db?utm_content=pricingPage" class="d-none mt-xl-8 btn btn-block btn-primary-soft lift" target="_blank" style="padding: 0.8125rem 1.25rem;">
                   免費開始專屬客管工具 <i class="fe fe-arrow-right ml-3"></i>
                 </a>
 
@@ -283,8 +301,11 @@
 
             <!-- Card -->
             <div class="card shadow-lg mb-6 mb-md-0">
+              <div style="background-color:#06BF9D; width:100%; border-radius: 0.375rem 0.375rem 0 0; color:white; text-align:center;padding:10px;">
+                限時優惠
+              </div>
               <div class="card-body">
-
+                <img src="assets/img/illustrations/price-2.svg">
                 <!-- Preheading -->
                 <div class="text-center mb-3">
                   <span class="badge text-uppercase text-primary font-weight-bold">
@@ -295,7 +316,7 @@
                 <!-- Price -->
                 <div class="d-flex justify-content-center">
                   <span class="h2 mb-0 mt-2">$</span>
-                  <span class="price display-2 mb-0" data-annual="249" data-monthly="299" data-decimals="0">299</span>
+                  <span class="price price-mobile mb-0 font-eng display-3" data-annual="249" data-monthly="299" data-decimals="0">299</span>
                   <span class="h2 align-self-end mb-1">/月</span>
                 </div>
 
@@ -303,7 +324,6 @@
                 <p class="text-center text-muted mb-5 desc" data-monthly="每月付 299 元" data-annual="每年付 2999 元 ( 便宜 20 %)">
                 </p>
 
-                <!-- List -->
                 <div class="d-flex">
 
                   <!-- Badge -->
@@ -313,7 +333,7 @@
 
                   <!-- Text -->
                   <p>
-                    上限 500 位客戶名單
+                    <span style="text-decoration: line-through;">上限 500 位客戶名單</span> <span style="color:#5005F2;">6/30/2021前訂閱·享有終生無上限客戶名單</span>
                   </p>
 
                 </div>
@@ -345,7 +365,7 @@
                 </div>
 
                 <!-- Button -->
-                <a data-annual="plus_yearly_usd" data-monthly="plus_monthly_usd" class="mt-xl-8 btn btn-block btn-primary plan" target="_blank" style="padding: 0.8125rem 1.25rem;">
+                <a data-annual="plus_yearly_twd" data-monthly="plus_monthly_twd" class="d-none mt-xl-8 btn btn-block btn-primary plan lift" target="_blank" style="padding: 0.8125rem 1.25rem;">
                   解鎖更多好用客管功能 <i class="fe fe-arrow-right ml-3"></i>
                 </a>
 
@@ -357,8 +377,11 @@
 
             <!-- Card -->
             <div class="card shadow-lg mb-md-0">
+              <div style="background-color:white; width:100%; border-radius: 0.375rem 0.375rem 0 0; color:white; text-align:center;padding:10px;">
+                cooby pro
+              </div>
               <div class="card-body">
-
+                <img src="assets/img/illustrations/price-3.svg">
                 <!-- Preheading -->
                 <div class="text-center mb-3">
                   <span class="badge text-uppercase text-primary font-weight-bold">
@@ -369,7 +392,7 @@
                 <!-- Price -->
                 <div class="d-flex justify-content-center">
                   <span class="h2 mb-0 mt-2">$</span>
-                  <span class="price display-2 mb-0" data-annual="749" data-monthly="899" data-decimals="0">899</span>
+                  <span class="price price-mobile mb-0 font-eng display-3" data-annual="749" data-monthly="899" data-decimals="0">899</span>
                   <span class="h2 align-self-end mb-1">/月</span>
                 </div>
 
@@ -432,18 +455,24 @@
                 </div>
 
                 <!-- Button -->
-                <a href="https://app.cooby.co/signup" class="mt-xl-8 btn btn-block btn-primary-soft" target="_blank"style="padding: 0.8125rem 1.25rem;">
+                <a data-annual="pro_yearly_twd" data-monthly="pro_monthly_twd" class="d-none mt-xl-8 btn btn-block btn-primary-soft plan lift" target="_blank" style="padding: 0.8125rem 1.25rem;">
                   享受無限制 Cooby 服務<i class="fe fe-arrow-right ml-3"></i>
                 </a>
 
               </div>
             </div>
-
           </div>
+          <div class="col-12 col-md-4"></div>
+          <div class="col-12 col-md-4">
+            <!-- Button -->
+                <a data-annual="plus_yearly_usd" data-monthly="plus_monthly_usd" class="mt-xl-8 btn btn-block btn-primary plan lift" target="_blank" style="padding: 0.8125rem 1.25rem;">
+                  開始免費試用七天
+                </a>
+          </div>
+          <div class="col-12 col-md-4"></div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
-
 
 
     <!-- FOOTER
@@ -464,7 +493,7 @@
             <!-- Social -->
             <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
               <li class="list-inline-item list-social-item mr-3">
-                <a href="https://www.facebook.com/coobytaiwan/" target=”_blank”  class="text-decoration-none">
+                <a href="https://www.facebook.com/coobytaiwan/" target=”_blank”  class="text-decoration-none" onclick="gaTracking('visit_facebook', 'click', 'clickFacebookBtn')">
                   <img src="../assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
                 </a>
               </li>
@@ -505,12 +534,12 @@
             <ul class="list-unstyled text-muted mb-0">
               <li class="mb-3">
                 <a href="/zh-tw/terms" class="text-reset">
-                  使用條款與條件
+                  使用者條款
                 </a>
               </li>
               <li class="mb-3">
                 <a href="/zh-tw/privacy" class="text-reset">
-                  隱私權保護政策
+                  隱私權政策
                 </a>
               </li>
             </ul>
@@ -531,11 +560,22 @@
                 </a>
               </li>
               <li class="mb-3">
-                <a href="https://lin.ee/4WscYE4Cq" class="text-reset">
+                <a href="https://lin.ee/4WscYE4Cq" class="text-reset" target="_blank">
                   Line 我們
                 </a>
               </li>
             </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+
+                <a href="https://apps.apple.com/app/id1546272572" class="text-reset d-inline-block mr-1" target="_blank" onclick="gaTracking('visit_app_store', 'click', 'clickAppStoreBtn')">
+                  <img src="../assets/img/buttons/button-app.png" class="img-fluid" alt="..." style="max-width: 155px;"/>
+                </a>
+
+                <!--<a href="#!" class="text-reset d-inline-block" style="margin-top:10px;">
+                  <img src="assets/img/buttons/button-play.png" class="img-fluid" alt="..." style="max-width: 155px;">
+                </a>-->
+
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
@@ -569,6 +609,26 @@
 
     <!-- Theme JS -->
     <script src="../assets/js/theme.min.js"></script>
+
+    <!-- External Lib -->
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+    <script type="text/javascript">
+        window.__be = window.__be || {};
+        window.__be.id = "600157073ec25b0008ecbebe";
+        (function() {
+            var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+            be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+        })();
+
+        window.BE_API = window.BE_API || {};
+
+        function openChatbotWindow() {
+          window.BE_API.openChatWindow();
+        }
+
+    </script>
+    <!-- End of ChatBot code -->
 
 
   </body>

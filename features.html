@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Cooby 酷比 | 最人性化的保險業務客管系統" />
-    <meta property="og:image" content="https://cooby.co/assets/img/cooby-app-logo-dark.png">
+    <meta property="og:title" content="Cooby | Customer Platform Built for Messaging" />
+    <meta property="og:image" content="https://cooby.co/assets/img/preview-images/meta_tags_eng.jpg" />
     <meta property="og:url" content="https://cooby.co" />
-    <meta property="og:description" content="厭倦商用軟體複雜難解的介面，追求簡單、好用、高效率，我們為保險業務個人設計一套客戶管理系統，Cooby 就如此誕生了。" />
+    <meta property="og:description" content="Find inner peace in your messaging apps. Put your customers at ease." />
 
 
 
@@ -24,15 +24,17 @@
 
       gtag('config', 'UA-58041205-5');
 
-      function signUpTracking(category, label, numeric_value) {
-      gtag('event', "sign_up", {
-      'event_category': category,
-      'event_label': label,
-      'value': numeric_value
-      });
-    }
+      function gaTracking(event_name, category, label, numeric_value) {
+        gtag('event', event_name, {
+        'event_category': category,
+        'event_label': label,
+        'value': numeric_value
+        });
+      }
     </script>
 
+    <!-- JS -->
+    <script src="./assets/js/BZ0/BZ0.js"></script>
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
@@ -57,7 +59,7 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
 
-    <title>Cooby 酷比 | 最人性化的保險業務客管系統</title>
+    <title>Cooby | Customer Platform Built for Messaging</title>
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -106,7 +108,7 @@
           </button>
 
           <!-- Navigation -->
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto" style="margin:auto;">
             <li class="nav-item">
               <a class="nav-link" id="navbarProduct" href="./features.html">
                 Features
@@ -125,7 +127,7 @@
             </li>-->
             <li class="nav-item">
               <a class="nav-link" id="navbarTeam" href="./careers.html">
-                Career
+                Careers
               </a>
             </li>
             <li class="nav-item">
@@ -143,13 +145,28 @@
             </div>
           </li>
           </ul>
+          <ul class="navbar-nav ml-auto" style="margin-right: 1rem;">
+            <li class="nav-item">
+              <a id="signInSignUp"
+                 href="https://cooby.app.link/SqNxlEma8db?utm_content=navbar"
+                 target="_blank"
+                 onclick="gaTracking('log_in', 'click', 'Navbar')"
+                 >
+                Log In
+              </a>
+            </li>
+          </ul>
           <!-- Button -->
-          <div class="ml-auto">
-
-            <a class="navbar-btn btn btn-sm btn-primary lift ml-3" href="./#buy" data-toggle="smooth-scroll">
-              Try Now
+          <div class="text-center pb-md-0 pb-8">
+            <a class="navbar-btn btn btn-sm btn-primary lift"
+               href="https://cooby.app.link/LwlQVmaL6db?utm_content=navbar"
+               data-toggle="smooth-scroll"
+               target="_blank"
+               onclick="gaTracking('sign_up', 'click', 'Navbar')">
+              Sign Up
             </a>
           </div>
+
 
         </div>
 
@@ -159,7 +176,7 @@
 
     <!-- WELCOME
     ================================================== -->
-    <section class="pt-12 pt-md-11 pb-6 pb-md-8 bg-cooby-indigo" id="welcome">
+    <section class="pt-10 pt-md-11 pb-6 pb-md-8 bg-cooby-indigo" id="welcome">
 
       <!-- Shape -->
       <div class="shape shape-blur-3 svg-shim text-white">
@@ -177,8 +194,8 @@
             </h1>
 
             <!-- Text -->
-            <p class="font-size-lg text-white mb-6 mb-md-8">
-               Focus on the relationships via messaging apps.<br>Leave the rest to Cooby.
+            <p class="font-size-lg text-white mb-6 mb-md-8" style="width:90%; margin:auto;">
+               Focus on building relationships via messaging apps. Leave the rest to Cooby.
             </p>
 
           </div>
@@ -360,7 +377,7 @@
               <div class="col-12 col-md-6 col-lg-7 order-md-1">
 
                 <!-- Image -->
-                <img src="assets/img/screenshots/ui/mobile-chat.png" alt="..." class="img-fluid mb-6 mb-md-4" data-aos="fade-right">
+                <img src="assets/img/screenshots/ui/line_import_eng.png" alt="..." class="img-fluid mb-6 mb-md-4" data-aos="fade-right">
 
               </div>
               <div class="col-12 col-md-6 col-lg-5 order-md-2" data-aos="fade-left">
@@ -382,13 +399,13 @@
 
         <!-- Unified View
         ================================================== -->
-        <section class="py-8 py-md-8">
+        <section class="py-8 py-md-0">
           <div class="container">
             <div class="row align-items-center justify-content-between">
               <div class="col-12 col-md-6 col-lg-7 order-md-2">
 
                 <!-- Image -->
-                <img src="assets/img/screenshots/ui/mobile-chat.png" alt="..." class="img-fluid mb-6 mb-md-4" data-aos="fade-left">
+                <img src="assets/img/screenshots/ui/activities.png" alt="..." class="img-fluid mb-6 mb-md-0" data-aos="fade-left">
 
               </div>
               <div class="col-12 col-md-6 col-lg-5 order-md-1" data-aos="fade-right">
@@ -400,7 +417,7 @@
 
                 <!-- Text -->
                 <p class="font-size-lg text-muted mb-0">
-                  Use both emails and messaging apps? See all your activities with a customer across emails and messaging apps in one place
+                  Use both emails and messaging apps? See all your activities with a customer across emails and messaging apps in one place.
                 </p>
 
               </div>
@@ -408,11 +425,41 @@
           </div> <!-- / .container -->
         </section>
 
+            <!-- CTA
+    ================================================== -->
+    <section class="pt-6 pt-md-8 bg-cooby-light-gray" id="try">
+      <div class="container pb-6 pb-md-8 border-bottom-cooby">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-8">
 
+            <!-- Heading -->
+            <h2 class="font-weight-bold mb-1">
+              Start For Free
+            </h2>
+
+            <!-- Text -->
+            <p style="padding-top:15px;" class="font-size-lg text-muted mb-5 mb-md-0">
+              Cooby is the only CRM you'll ever need. <br>
+              Join companies like Nanshan, Fubon, Cathay Life and hundreds of other salespeople using Cooby.
+            </p>
+
+          </div>
+          <div class="col-12 col-md-1"></div>
+          <div class="col-12 col-md-3">
+
+            <!-- Button -->
+            <a href="http://cooby.app.link/LwlQVmaL6db?utm_content=startForFree" class="btn btn-primary lift" target="_blank" onclick="gaTracking('sign_up', 'click', 'clickStartForFreeBtn')">
+              Try Now
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
 
     <!-- FOOTER
     ================================================== -->
-      <footer class="py-8 py-md-11 @@classList bg-cooby-light-gray" id="footer">
+    <footer class="py-8 py-md-11 @@classList bg-cooby-light-gray" id="footer">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4 col-lg-4">
@@ -428,7 +475,7 @@
             <!-- Social -->
             <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
               <li class="list-inline-item list-social-item mr-3">
-                <a href="https://www.facebook.com/coobyhq/" class="text-decoration-none">
+                <a href="https://www.facebook.com/coobyhq/" class="text-decoration-none" onclick="gaTracking('visit_facebook', 'click', 'clickFacebookBtn')">
                   <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
                 </a>
               </li>
@@ -458,7 +505,7 @@
             </ul>
           </div>
 
-          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0 d-none">
 
             <!-- Heading -->
             <h6 class="font-weight-bold text-uppercase text-primary">
@@ -496,23 +543,22 @@
                 </a>
               </li>
               <li class="mb-3">
-                <a href="https://lin.ee/4WscYE4Cq" class="text-reset">
+                <a href="https://lin.ee/4WscYE4Cq" class="text-reset" target="_blank">
                   Line Us
                 </a>
               </li>
             </ul>
           </div>
           <div class="col-6 col-md-4 col-lg-2">
-
-                <a href="#!" class="text-reset d-inline-block mr-1">
-                  <img src="assets/img/buttons/button-app.png" class="img-fluid" alt="..." style="max-width: 155px;">
+                <a href="https://apps.apple.com/app/id1546272572" class="text-reset d-inline-block mr-1" target="_blank" onclick="gaTracking('visit_app_store', 'click', 'clickAppStoreBtn')">
+                  <img src="./assets/img/buttons/button-app.png" class="img-fluid" alt="..." style="max-width: 155px;">
                 </a>
 
                 <!--<a href="#!" class="text-reset d-inline-block" style="margin-top:10px;">
                   <img src="assets/img/buttons/button-play.png" class="img-fluid" alt="..." style="max-width: 155px;">
                 </a>-->
-            
-              </div>
+
+          </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </footer>
@@ -545,6 +591,26 @@
 
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
+
+    <!-- External Lib -->
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+    <script type="text/javascript">
+        window.__be = window.__be || {};
+        window.__be.id = "60026dc57ad4d00007fa92fe";
+        (function() {
+            var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+            be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+        })();
+
+        window.BE_API = window.BE_API || {};
+
+        function openChatbotWindow() {
+          window.BE_API.openChatWindow();
+        }
+    </script>
+    <!-- End of ChatBot code -->
+
 
 
   </body>

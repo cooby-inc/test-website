@@ -9,9 +9,9 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="Cooby | Customer Platform Built for Messaging" />
-    <meta property="og:image" content="https://cooby.co/assets/img/cooby-app-logo-dark.png">
+    <meta property="og:image" content="https://cooby.co/assets/img/preview-images/meta_tags_eng.jpg" />
     <meta property="og:url" content="https://cooby.co" />
-    <meta property="og:description" content="厭倦商用軟體複雜難解的介面，追求簡單、好用、高效率，我們為保險業務個人設計一套客戶管理系統，Cooby 就如此誕生了。" />
+    <meta property="og:description" content="Find inner peace in your messaging apps. Put your customers at ease." />
 
 
 
@@ -24,15 +24,17 @@
 
       gtag('config', 'UA-58041205-5');
 
-      function signUpTracking(category, label, numeric_value) {
-      gtag('event', "sign_up", {
-      'event_category': category,
-      'event_label': label,
-      'value': numeric_value
-      });
-    }
+      function gaTracking(event_name, category, label, numeric_value) {
+        gtag('event', event_name, {
+        'event_category': category,
+        'event_label': label,
+        'value': numeric_value
+        });
+      }
     </script>
 
+    <!-- JS -->
+    <script src="./assets/js/BZ0/BZ0.js"></script>
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
@@ -78,6 +80,26 @@
     <!-- End Facebook Pixel Code -->
 
   </head>
+  <script>
+    function showInsightPopup (e) {
+      const blockBackground = document.getElementById('block-background');
+      blockBackground.style.display = "flex";
+      return false;
+    }
+  </script>
+  <style>
+    #cooby-insight-btn-and-ps {
+      justify-content: center;
+      width: 260px;
+    }
+   
+    @media screen and (max-width: 320px){
+      #insight_bz_0 {
+        flex-direction: column-reverse;
+      }
+    }  
+
+  </style>
   <body class="font-eng">
 
 
@@ -106,7 +128,7 @@
           </button>
 
           <!-- Navigation -->
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto" style="margin:auto;">
             <li class="nav-item">
               <a class="nav-link" id="navbarProduct" href="./features.html">
                 Features
@@ -125,7 +147,7 @@
             </li>-->
             <li class="nav-item">
               <a class="nav-link" id="navbarTeam" href="./careers.html">
-                Career
+                Careers
               </a>
             </li>
             <li class="nav-item">
@@ -143,13 +165,28 @@
             </div>
           </li>
           </ul>
+          <ul class="navbar-nav ml-auto" style="margin-right: 1rem;">
+            <li class="nav-item">
+              <a id="signInSignUp"
+                 href="https://cooby.app.link/SqNxlEma8db?utm_content=navbar"
+                 target="_blank"
+                 onclick="gaTracking('log_in', 'click', 'Navbar')"
+                 >
+                Log In
+              </a>
+            </li>
+          </ul>
           <!-- Button -->
-          <div class="ml-auto">
-
-            <a class="navbar-btn btn btn-sm btn-primary lift ml-3" href="./#buy" data-toggle="smooth-scroll">
-              Try Now
+          <div class="text-center pb-md-0 pb-8">
+            <a class="navbar-btn btn btn-sm btn-primary lift"
+               href="https://cooby.app.link/LwlQVmaL6db?utm_content=navbar"
+               data-toggle="smooth-scroll"
+               target="_blank"
+               onclick="gaTracking('sign_up', 'click', 'Navbar')">
+              Sign Up
             </a>
           </div>
+
 
         </div>
 
@@ -162,7 +199,7 @@
     <section class="position-relative pt-14 pt-md-14 mt-n10" id='welcome'>
 
       <!-- Shape -->
-      <div class="shape shape-fluid-x shape-blur-2 svg-shim text-light">
+      <div class="d-none shape shape-fluid-x shape-blur-2 svg-shim text-light">
         <svg viewBox="0 0 1313 768" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M442.794 768c163.088 0 305.568-88.227 382.317-219.556l.183.556s.249-.749.762-2.181a440.362 440.362 0 0033.192-71.389C901.996 397.81 989.306 277.09 1144.29 206l-.92-.693C1230.34 171.296 1295.63 94.049 1312.83 0H1.294v295.514c-.663 9.909-1 19.908-1 29.986 0 244.386 198.114 442.5 442.5 442.5z" fill="currentColor"/></svg>
       </div>
       <!-- Content -->
@@ -171,28 +208,28 @@
           <div class="col-12 col-md-6">
 
             <!-- Image -->
-            <img src="assets/img/illustrations/home_banner.png" alt="..." class="img-fluid mw-130 float-right mb-6 mb-md-0" data-aos="fade-right">
+            <img src="assets/img/illustrations/home_banner.png" alt="..." class="img-fluid mw-100 mw-md-130 float-right mb-6 mb-md-0" data-aos="fade-right">
 
           </div>
           <div class="col-12 col-md-6">
 
             <!-- Heading -->
             <h1 class="display-3 font-weight-bold">
-              <div data-aos="fade-left">A Customer Platform</div>
+              <div data-aos="fade-left">Customer Platform</div>
               <div data-aos="fade-left" data-aos-delay="100">Built for Messaging</div>
             </h1>
 
             <!-- Text -->
             <p class="font-size-lg text-muted mb-6" data-aos="fade-left" data-aos-delay="200">
-              Find inner peace in your messaging apps. Put your customers and yourself at ease. Use Cooby with <span data-toggle="typed" data-options='{"strings": ["Line", "Gmail"]}'></span>
+              Find inner peace in your messaging apps. Put your customers at ease. Use Cooby with Line and Gmail.
             </p>
 
             <!-- Buttons -->
             <div data-aos="fade-left">
-              <a href="#!" class="btn btn-primary mr-1 lift">
+              <a href="http://cooby.app.link/LwlQVmaL6db?utm_content=clickHeroBtn" class="btn btn-primary mr-1 lift" data-toggle="smooth-scroll" onclick="gaTracking('sign_up', 'click', 'clickHeroBtn')">
                 Start for free <i class="fe fe-arrow-right ml-3"></i>
               </a>
-              <a href="#!" class="btn btn-primary-soft lift">
+              <a href="./features" class="btn btn-primary-soft lift">
                 Learn more
               </a>
             </div>
@@ -203,9 +240,62 @@
 
     </section>
 
+
+<!-- INSIGHT
+    ================================================== -->
+    <div id="block-background"
+    style="display:none; top:0; left: 0; bottom: 0; right: 0; position: fixed; width: 100%; height: 100%; 
+    background-color: rgba(255, 255, 255, 0.5); z-index: 5000; justify-content: center; align-items: center;">
+      <div id='iframe-holder' style="background-color: white;">
+        <iframe src="http://localhost:3000/en/app/report" width="800" height="600"></iframe>
+      </div>
+    </div>
+    <section class="pt-md-8 pb-8 pt-12 bg-cooby-light-gray">
+      <div class="container">
+        <div id='insight_bz_0' class="row justify-content-center">
+          <div class="col-12 col-md-6 pt-12" data-aos="fade-right">
+            <div id='insight_bz0_slogan'>
+              <h1 class="font-weight-bold">
+                Get your Client Relationship Report for WhatsApp
+              </h1>
+            </div>            
+            <div id="try-btn-and-aux-text" class="table-container">
+              <p class="font-size-lg text-muted mb-7">
+                Take a glance of your client conversations on WhatsApp. Understand where and who you spend the most time for. Optimize your efforts to focus on the most important things. </span>
+              </p>
+              <section id='cooby-insight-btn-and-ps' 
+                class="d-flex flex-column justify-content-center">
+                <div id='BZ0_entry_button' onclick="onBZ0EntryButtonClick()">
+                  <span
+                    class="btn btn-primary lift mb-3"
+                  >Get Your Free Report Now</span>
+                </div>
+                <div id='ps' style="color: #06BF9D; font-size: 12px; text-align: center;">
+                  *No signup required
+                </div>
+              </section> 
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="assets/img/illustrations/cooby_insight_trailer.png" 
+              alt="..." class="img-fluid mw-100 mw-md-130 mb-6 mb-md-0" 
+              data-aos="fade-left">
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <div id='BZ0_popup_if_mobile'>
+        <div id='BZ0_popup_main_content'>
+          <div class='title'>Prepare another device to continue</div>
+          <div class='explain'>If you are currently using the phone with your primary WhatsApp account. Please open <span class='url-green'>cooby.co</span> on another device.</div>
+          <div class='explain-img'><img src="./assets/img/illustrations/BZ0IfMobileTutorial.svg"/></div>
+          <div class='got-it-button btn btn-primary lift mb-3' onClick="closeBZ0Popup()">Got it</div>
+        </div>
+      </div>
+    </section>
+
     <!-- ABOUT
     ================================================== -->
-    <section class="pt-md-8 pb-8">
+    <section class="pt-md-8 pb-8 pt-12">
       <div class="container">
         <div class="row justify-content-center">
            <div class="col-12 col-md-10 col-lg-8 text-center">
@@ -218,32 +308,32 @@
 
             <!-- Heading -->
             <h1 class="font-weight-bold">
-              Contact, engage<br>and nurture customers
+              Contact, Engage<br>and Nurture Customers
             </h1>
             <div class="row">
           <div class="col-12 order-md-2">
-            
+
             <!-- Macbook + iPhone -->
             <div class="device-combo device-combo-macbook-iphonex mb-6 mb-md-0">
 
               <!-- Macbook -->
               <div class="device device-macbook">
-                <img src="assets/img/screenshots/desktop/dashkit-alt.jpg" class="device-screen" alt="...">
+                <img src="assets/img/screenshots/desktop/profile_eng.jpg" class="device-screen" alt="...">
                 <img src="assets/img/devices/macbook.svg" class="img-fluid" alt="...">
               </div>
 
               <!-- iPhone -->
               <div class="device device-iphonex">
-                <img src="assets/img/screenshots/mobile/dashkit-alt.jpg" class="device-screen" alt="...">
+                <img src="assets/img/screenshots/mobile/tasks_eng.jpg" class="device-screen" alt="...">
                 <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
               </div>
-              
+
             </div>
 
           </div>
         </div> <!-- / .row -->
           </div>
-          
+
             <!-- Card -->
             <div class="card-group">
               <div class="card">
@@ -271,7 +361,7 @@
 
                   <!-- Text -->
                   <p class="text-center text-muted mb-0">
-                    Forgot if it was in emails or messages?
+                    Forgot whether an important piece of info was in emails or messages?
                   </p>
 
                 </div>
@@ -281,7 +371,7 @@
 
             <!-- Text -->
             <p class="font-size-lg text-muted mb-7">
-              Focus on what matters the most: build enduring customer relationships. Win clients for life with Cooby.<br> <span class="text-green">Cooby is right for you &hearts;. It’s simple, useful, and efficient. </span>
+              Focus on what matters the most: build enduring customer relationships. Win clients for life with Cooby.<br> <span class="text-primary">Cooby is right for you &hearts;. It’s simple, useful, and efficient. </span>
             </p>
 
           </div>
@@ -304,7 +394,7 @@
 
             <!-- Heading -->
             <h1 class="font-weight-bold">
-              Built to empower customer-centric businesses
+              Built to Empower Customer-Centric Businesses
             </h1>
 
             <!-- Text -->
@@ -323,7 +413,7 @@
                 <div class="col-md-4 position-relative">
 
                   <!-- Image -->
-                  <img src="assets/img/illustrations/illustration-8.png" class="h-75 position-absolute right-0 mt-7 mr-n4" alt="...">
+                  <img src="assets/img/illustrations/profeesional_services.jpg" class="h-75 position-absolute right-0 mt-7 mr-n4" alt="...">
 
                 </div>
                 <div class="col-md-8">
@@ -374,7 +464,7 @@
                 <div class="col-md-4">
 
                   <!-- Image -->
-                  <img src="assets/img/illustrations/illustration-6.png" class="h-75 position-absolute left-0 mt-7" alt="...">
+                  <img src="assets/img/illustrations/agencies_and_consultancies.jpg" class="h-75 position-absolute left-0 mt-7" alt="...">
 
                 </div>
               </div> <!-- / .row -->
@@ -391,7 +481,7 @@
                 <div class="col-md-4 position-relative">
 
                   <!-- Image -->
-                  <img src="assets/img/illustrations/illustration-2.png" class="h-75 position-absolute right-0 mt-6" alt="...">
+                  <img src="assets/img/illustrations/relationship_focused_sales.jpg" class="h-75 position-absolute right-0 mt-6" alt="...">
 
                 </div>
                 <div class="col-md-8">
@@ -401,7 +491,7 @@
 
                     <!-- Heading -->
                     <h3 class="font-weight-bold">
-                      Relationship-Based Sales
+                      Relationship-Focused Sales
                     </h3>
 
                     <!-- Text -->
@@ -447,8 +537,8 @@
 
     <!-- ABOUT
     ================================================== -->
-    <section id="product" class=' px-2 pb-4 pb-md-0'>
-      <div class="container">
+    <section id="product" class='px-2 pb-8 pb-md-6'>
+      <div class="container border-bottom-cooby pb-8">
         <div class="row justify-content-between align-items-center">
           <div class="col-12 col-md-6 col-lg-5 order-md-2">
 
@@ -462,7 +552,7 @@
               <img class="img-fluid rounded shadow align-self-start" data-jarallax-element="-50" src="assets/img/screenshots/ui/product_2.jpg" alt="..." style="min-height: 1px; max-width: 50%; margin-top: -35%;">
 
               <!-- Image -->
-              <img class=" img-fluid rounded shadow align-self-center" data-jarallax-element="-80" src="assets/img/screenshots/ui/product_3.png" alt="..." style="min-height: 1px; max-width: 50%; margin-top: -20%;">
+              <img class="d-none img-fluid rounded shadow align-self-center" data-jarallax-element="-80" src="assets/img/screenshots/ui/product_3.png" alt="..." style="min-height: 1px; max-width: 50%; margin-top: -20%;">
 
             </div>
 
@@ -471,7 +561,7 @@
 
             <!-- Heading -->
             <h1 class="font-weight-bold">
-              Manage your customer relationships in a breeze
+              Manage Your Customer Relationships in a Breeze
             </h1>
 
             <!-- Text -->
@@ -507,7 +597,7 @@
                   </div>
 
                   <p>
-                    Sales Activities (calls, emails, Line messages, notes, etc)
+                    All Sales Activities
                   </p>
 
                 </div>
@@ -521,7 +611,7 @@
                   </div>
 
                   <p>
-                    Notes
+                    Quick Notes
                   </p>
 
                 </div>
@@ -535,7 +625,7 @@
 
                   <!-- Text -->
                   <p>
-                    Tasks
+                    Trackable Tasks
                   </p>
 
                 </div>
@@ -549,7 +639,7 @@
 
                   <!-- Text -->
                   <p>
-                    Contact Suggestions
+                    Sales Suggestions
                   </p>
 
                 </div>
@@ -565,7 +655,7 @@
 
                   <!-- Text -->
                   <p>
-                    Periodic Reminders
+                    Client Reminders
                   </p>
 
                 </div>
@@ -591,7 +681,7 @@
 
                   <!-- Text -->
                   <p>
-                    Automatic Import from Line
+                    Smart Import from Line
                   </p>
 
                 </div>
@@ -604,7 +694,7 @@
 
                   <!-- Text -->
                   <p>
-                    File Attachment
+                    File Attachments
                   </p>
 
                 </div>
@@ -620,7 +710,7 @@
     <!-- INTEGRATIONS
     ================================================== -->
     <section class="d-none bg-dark py-8 py-md-13">
-      <div class="container">
+      <div class="container ">
         <div class="row justify-content-center">
           <div class="col-12 text-center">
 
@@ -793,12 +883,80 @@
       </div> <!-- / .container -->
     </section>
 
+<!-- NEWS
+    ================================================== -->
+    <section class="pb-8">
+      <div class="container">
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-primary font-weight-bold text-center pb-3">
+              Our News
+            </h6>
+
+        <div class="flickity-viewport-visible" data-flickity='{"imagesLoaded": true, "initialIndex": 6, "pageDots": false, "prevNextButtons": false, "contain": true}'>
+
+          <!-- Brand -->
+          <div class="col-5 col-md-2 pt-3">
+            
+            <a href="https://www.techinasia.com/exfacebook-execs-startup-raises-preseed-sequoias-surge" target="_blank"><div class="img-fluid">
+              <img src="assets/img/brands/tech-in-asia-logo-vector.png">
+            </div></a>
+          </div>
+          <!-- Brand -->
+          <div class="col-5 col-md-2 pt-2">
+            
+           <a href="https://meet-global.bnext.com.tw/articles/view/47329" target="_blank"> 
+            <div class="img-fluid">
+              <img src="assets/img/brands/meet_global.png">
+            </div></a>
+          </div>
+        </div>
+      </div> <!-- / .container -->
+    </section>
+
+<!-- BRANDS
+    ================================================== -->
+    <section class="pb-6">
+      <div class="container">
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-primary font-weight-bold text-center pb-3">
+              Backed by World-Class Investors
+            </h6>
+
+        <div class="flickity-viewport-visible" data-flickity='{"imagesLoaded": true, "initialIndex": 6, "pageDots": false, "prevNextButtons": false, "contain": true}'>
+
+          <!-- Brand -->
+          <div class="col-4 col-md-3 col-lg-2">
+            
+            <a href="https://www.surgeahead.com/" target="_blank"><div class="img-fluid">
+              <img src="assets/img/brands/logotype/surge_logo.png">
+            </div></a>
+          </div>
+          <!-- Brand -->
+          <div class="col-4 col-md-3 col-lg-2">
+            
+           <a href="https://www.pear.vc/" target="_blank"> 
+            <div class="img-fluid">
+              <img src="assets/img/brands/logotype/pear_logo.png">
+            </div></a>
+          </div>
+          <!-- Brand -->
+          <div class="col-4 col-md-3 col-lg-2">
+           <a href="https://www.hustlefund.vc/" target="_blank">
+            <div class="img-fluid">
+              <img src="assets/img/brands/logotype/hustle_fund_logo.png">
+            </div></a>
+          </div>
+        </div>
+      </div> <!-- / .container -->
+    </section>
+
+
     <!-- CTA
     ================================================== -->
-    <section class="pt-6 pt-md-8 bg-cooby-light-gray">
+    <section class="pt-6 pt-md-8 bg-cooby-light-gray" id="try">
       <div class="container pb-6 pb-md-8 border-bottom-cooby">
         <div class="row align-items-center">
-          <div class="col-8 col-md-8">
+          <div class="col-12 col-md-8">
 
             <!-- Heading -->
             <h2 class="font-weight-bold mb-1">
@@ -807,16 +965,17 @@
 
             <!-- Text -->
             <p style="padding-top:15px;" class="font-size-lg text-muted mb-5 mb-md-0">
-              No credit card needed. Cooby is the only CRM you'll ever need.<br>
-              Join companies like Nanshan, Fubon, Cathay Pacific and hundreds of other salespeople using Cooby.
+              Cooby is the only CRM you'll ever need. <br>
+              Join companies like Nanshan, Fubon, Cathay Life and hundreds of other salespeople using Cooby.
             </p>
 
           </div>
-          <div class="col-10 col-md-auto" style="padding-left:180px;">
+          <div class="col-12 col-md-1"></div>
+          <div class="col-12 col-md-3">
 
             <!-- Button -->
-            <a href="#!" class="btn btn-primary lift">
-              Try Now!
+            <a href="http://cooby.app.link/LwlQVmaL6db?utm_content=startForFree" class="btn btn-primary lift" target="_blank" onclick="gaTracking('sign_up', 'click', 'clickStartForFreeBtn')">
+              Try Now
             </a>
 
           </div>
@@ -824,97 +983,6 @@
       </div> <!-- / .container -->
     </section>
 
-    <!-- REGISTRATION
-    ================================================== -->
-    <section class="d-none py-11">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8">
-
-            <!-- Card -->
-            <div class="card card-border border-primary shadow-light-lg" data-jarallax-element="-40">
-              <div class="card-body">
-                <div class="row justify-content-center">
-                  <div class="col-12 col-xl-11">
-
-                    <!-- Image -->
-                    <div class="text-center">
-                      <img src="assets/img/illustrations/illustration-6.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
-                    </div>
-
-                    <!-- Heading -->
-                    <h1 class="font-weight-bold text-center mb-1">
-                      搶先報名，免費試用
-                    </h1>
-
-                    <!-- Text -->
-                    <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
-                    </p>
-
-                    <!-- Form -->
-                    <form action="http://api.cooby.co/leads/" method="POST">
-                    <!-- <form action="https://formspree.io/mpzyrgoq/" method="POST"> -->
-                      <div class="row">
-                        <div class="col-12 col-md-6">
-
-                          <!-- Name -->
-                          <div class="form-label-group">
-                            <input type="text" class="form-control form-control-flush" name="name" placeholder="姓名" required>
-                            <label for="registrationName">姓名</label>
-                          </div>
-
-                        </div>
-                        <div class="col-12 col-md-6">
-
-                          <!-- Telephone -->
-                          <div class="form-label-group">
-                            <input type="text" class="form-control form-control-flush" name="phone" placeholder="電話" required>
-                            <label for="registrationPhone">電話</label>
-                          </div>
-
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 col-md-6">
-
-                          <!-- Email -->
-                          <div class="form-label-group">
-                            <input type="email" class="form-control form-control-flush" name="email" placeholder="Email" required>
-                            <label for="registrationEmail">Email</label>
-                          </div>
-
-                        </div>
-                        <div class="col-12 col-md-6">
-
-                          <!-- Company -->
-                          <div class="form-label-group">
-                            <input type="text" class="form-control form-control-flush" name="company" placeholder="服務公司">
-                            <label for="registrationCompany">服務公司</label>
-                          </div>
-
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12">
-
-                          <!-- Submit -->
-                          <button class="btn btn-block btn-primary mt-3 lift" onclick="signUpTracking('Submit Form', 'Buy Section')">
-                            報名
-                          </button>
-
-                        </div>
-                      </div>
-                    </form>
-
-                  </div>
-                </div> <!-- / .row -->
-              </div>
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
     <!-- CURVE
     ================================================== -->
     <div class="d-none position-relative mt-n16">
@@ -934,7 +1002,7 @@
 
     <!-- FOOTER
     ================================================== -->
-      <footer class="py-8 py-md-11 @@classList bg-cooby-light-gray" id="footer">
+    <footer class="py-8 py-md-11 @@classList bg-cooby-light-gray" id="footer">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4 col-lg-4">
@@ -950,7 +1018,7 @@
             <!-- Social -->
             <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
               <li class="list-inline-item list-social-item mr-3">
-                <a href="https://www.facebook.com/coobyhq/" class="text-decoration-none">
+                <a href="https://www.facebook.com/coobyhq/" class="text-decoration-none" onclick="gaTracking('visit_facebook', 'click', 'clickFacebookBtn')">
                   <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
                 </a>
               </li>
@@ -980,7 +1048,7 @@
             </ul>
           </div>
 
-          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0 d-none">
 
             <!-- Heading -->
             <h6 class="font-weight-bold text-uppercase text-primary">
@@ -1018,23 +1086,22 @@
                 </a>
               </li>
               <li class="mb-3">
-                <a href="https://lin.ee/4WscYE4Cq" class="text-reset">
+                <a href="https://lin.ee/4WscYE4Cq" class="text-reset" target="_blank">
                   Line Us
                 </a>
               </li>
             </ul>
           </div>
           <div class="col-6 col-md-4 col-lg-2">
-
-                <a href="#!" class="text-reset d-inline-block mr-1">
-                  <img src="assets/img/buttons/button-app.png" class="img-fluid" alt="..." style="max-width: 155px;">
+                <a href="https://apps.apple.com/app/id1546272572" class="text-reset d-inline-block mr-1" target="_blank" onclick="gaTracking('visit_app_store', 'click', 'clickAppStoreBtn')">
+                  <img src="./assets/img/buttons/button-app.png" class="img-fluid" alt="..." style="max-width: 155px;">
                 </a>
 
                 <!--<a href="#!" class="text-reset d-inline-block" style="margin-top:10px;">
                   <img src="assets/img/buttons/button-play.png" class="img-fluid" alt="..." style="max-width: 155px;">
                 </a>-->
-            
-              </div>
+
+          </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </footer>
@@ -1068,6 +1135,25 @@
 
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
+
+    <!-- External Lib -->
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+    <script type="text/javascript">
+        window.__be = window.__be || {};
+        window.__be.id = "60026dc57ad4d00007fa92fe";
+        (function() {
+            var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+            be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+        })();
+
+        window.BE_API = window.BE_API || {};
+
+        function openChatbotWindow() {
+          window.BE_API.openChatWindow();
+        }
+    </script>
+    <!-- End of ChatBot code -->
 
 
   </body>

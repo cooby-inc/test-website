@@ -9,9 +9,9 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="Cooby | Customer Platform Built for Messaging" />
-    <meta property="og:image" content="https://cooby.co/assets/img/cooby-app-logo-dark.png">
+    <meta property="og:image" content="https://cooby.co/assets/img/preview-images/meta_tags_eng.jpg" />
     <meta property="og:url" content="https://cooby.co" />
-    <meta property="og:description" content="厭倦商用軟體複雜難解的介面，追求簡單、好用、高效率，我們為保險業務個人設計一套客戶管理系統，Cooby 就如此誕生了。" />
+    <meta property="og:description" content="Find inner peace in your messaging apps. Put your customers at ease." />
 
 
 
@@ -24,15 +24,17 @@
 
       gtag('config', 'UA-58041205-5');
 
-      function signUpTracking(category, label, numeric_value) {
-      gtag('event', "sign_up", {
-      'event_category': category,
-      'event_label': label,
-      'value': numeric_value
-      });
-    }
+      function gaTracking(event_name, category, label, numeric_value) {
+        gtag('event', event_name, {
+        'event_category': category,
+        'event_label': label,
+        'value': numeric_value
+        });
+      }
     </script>
 
+    <!-- JS -->
+    <script src="./assets/js/BZ0/BZ0.js"></script>
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
@@ -106,7 +108,7 @@
           </button>
 
           <!-- Navigation -->
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto" style="margin:auto;">
             <li class="nav-item">
               <a class="nav-link" id="navbarProduct" href="./features.html">
                 Features
@@ -125,7 +127,7 @@
             </li>-->
             <li class="nav-item">
               <a class="nav-link" id="navbarTeam" href="./careers.html">
-                Career
+                Careers
               </a>
             </li>
             <li class="nav-item">
@@ -143,32 +145,48 @@
             </div>
           </li>
           </ul>
+          <ul class="navbar-nav ml-auto" style="margin-right: 1rem;">
+            <li class="nav-item">
+              <a id="signInSignUp"
+                 href="https://cooby.app.link/SqNxlEma8db?utm_content=navbar"
+                 target="_blank"
+                 onclick="gaTracking('log_in', 'click', 'Navbar')"
+                 >
+                Log In
+              </a>
+            </li>
+          </ul>
           <!-- Button -->
-          <div class="ml-auto">
-
-            <a class="navbar-btn btn btn-sm btn-primary lift ml-3" href="./#buy" data-toggle="smooth-scroll">
-              Try Now
+          <div class="text-center pb-md-0 pb-8">
+            <a class="navbar-btn btn btn-sm btn-primary lift"
+               href="https://cooby.app.link/LwlQVmaL6db?utm_content=navbar"
+               data-toggle="smooth-scroll"
+               target="_blank"
+               onclick="gaTracking('sign_up', 'click', 'Navbar')">
+              Sign Up
             </a>
           </div>
+
 
         </div>
 
       </div>
     </nav>
 
-
     <!-- WELCOME
     ================================================== -->
-    <section data-jarallax data-speed=".8" class="pt-12 pt-md-11 pb-6 pb-md-8 bg-cooby-indigo bg-cover jarallax"> <!--style="background-image: url(assets/img/covers/cover-13.jpg);"-->
+    <section 
+      class="pt-8 pt-md-11 pb-6 pb-md-8 bg-cooby-indigo hero-responsive" 
+      style="background-image: url(assets/img/covers/career_banner.svg);">
            
-           <!-- Shape -->
+           <!-- Sh+6ape -->
       <div class="shape shape-blur-3 svg-shim text-white">
         <svg viewBox="0 0 1738 487" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h1420.92s713.43 457.505 0 485.868C707.502 514.231 0 0 0 0z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="0" y1="0" x2="1049.98" y2="912.68" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor" stop-opacity=".075"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></linearGradient></defs></svg>
       </div>
 
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 pt-10 text-center">
+          <div class="col-12 col-md-7 pt-10 text-center">
 
             <!-- Heading -->
             <h1 class="display-3 font-weight-bold text-white">
@@ -176,7 +194,7 @@
             </h1>
 
             <!-- Text -->
-            <p class="font-size-lg text-white mb-6 mb-md-8">
+            <p class="font-size-lg text-white mb-10 mb-md-15">
               We're always looking to hire talented folks to join our ever-growing team of designers, engineers, and support staff.
             </p>
 
@@ -392,7 +410,7 @@
 
     <!-- IMAGE
     ================================================== -->
-    <section data-jarallax data-speed=".8" class="py-14 py-lg-16 jarallax" style="background-image: url(assets/img/photos/team-6.jpg);">
+    <section data-jarallax data-speed=".8" class="py-14 py-lg-16 jarallax" style="background-image: url(assets/img/photos/team-8.jpg);">
 
       <!-- Shape -->
       <div class="shape shape-top shape-fluid-x svg-shim text-light">
@@ -481,8 +499,8 @@
                   <tr>
                     <td>
 
-                      <a href="https://www.cakeresume.com/companies/cooby/jobs/junior-frontend-engineer" target="_blank" class="text-reset text-decoration-none">
-                        <p class="mb-1">
+                      <a href="https://www.cakeresume.com/companies/cooby/jobs/frontend-eng" target="_blank" class="text-reset text-decoration-none">
+                        <p class="mb-1 text-green">
                           Frontend Developer
                         </p>
                         <p class="font-size-sm text-muted mb-0">
@@ -493,7 +511,7 @@
                     </td>
                     <td target="_blank">
 
-                      <a href="https://www.cakeresume.com/companies/cooby/jobs/junior-frontend-engineer" target="_blank" class="text-reset text-decoration-none">
+                      <a href="https://www.cakeresume.com/companies/cooby/jobs/frontend-eng" target="_blank" class="text-reset text-decoration-none">
                         <p class="font-size-sm mb-0">
                           Engineering
                         </p>
@@ -502,7 +520,7 @@
                     </td>
                     <td>
 
-                      <a href="https://www.cakeresume.com/companies/cooby/jobs/junior-frontend-engineer" target="_blank" class="text-reset text-decoration-none">
+                      <a href="https://www.cakeresume.com/companies/cooby/jobs/frontend-engr" target="_blank" class="text-reset text-decoration-none">
                         <p class="font-size-sm mb-0">
                           Taipei, Taiwan
                         </p>
@@ -513,28 +531,28 @@
                   <tr>
                     <td>
 
-                      <a href="https://www.cakeresume.com/companies/cooby/jobs/administrative-assistant-38be3e" target="_blank" class="text-reset text-decoration-none">
-                        <p class="mb-1">
-                          Administrative Assistant
+                      <a href="https://www.cakeresume.com/companies/cooby/jobs/android-engineer-b33fa9" target="_blank" class="text-reset text-decoration-none">
+                        <p class="mb-1 text-green">
+                          Android Developer
                         </p>
                         <p class="font-size-sm text-muted mb-0">
-                          Responsible for helping everyone on the team work efficiently and happily
+                          Responsible for building delightful Android app loved by our users
                         </p>
                       </a>
 
                     </td>
-                    <td>
+                    <td target="_blank">
 
-                      <a href="https://www.cakeresume.com/companies/cooby/jobs/administrative-assistant-38be3e" target="_blank" class="text-reset text-decoration-none">
+                      <a href="https://www.cakeresume.com/companies/cooby/jobs/android-engineer-b33fa9" target="_blank" class="text-reset text-decoration-none">
                         <p class="font-size-sm mb-0">
-                          Operation
+                          Engineering
                         </p>
                       </a>
 
                     </td>
                     <td>
 
-                      <a href="https://www.cakeresume.com/companies/cooby/jobs/administrative-assistant-38be3e" target="_blank" class="text-reset text-decoration-none">
+                      <a href="https://www.cakeresume.com/companies/cooby/jobs/android-engineer-b33fa9" target="_blank" class="text-reset text-decoration-none">
                         <p class="font-size-sm mb-0">
                           Taipei, Taiwan
                         </p>
@@ -546,7 +564,7 @@
                     <td>
 
                       <a href="mailto:hello@cooby.co" target="_blank" class="text-reset text-decoration-none">
-                        <p class="mb-1">
+                        <p class="mb-1 text-green">
                           Make Your Own Role (MYOR)
                         </p>
                         <p class="font-size-sm text-muted mb-0">
@@ -589,7 +607,7 @@
 
     <!-- FOOTER
     ================================================== -->
-      <footer class="py-8 py-md-11 @@classList bg-cooby-light-gray" id="footer">
+    <footer class="py-8 py-md-11 @@classList bg-cooby-light-gray" id="footer">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4 col-lg-4">
@@ -605,7 +623,7 @@
             <!-- Social -->
             <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
               <li class="list-inline-item list-social-item mr-3">
-                <a href="https://www.facebook.com/coobyhq/" class="text-decoration-none">
+                <a href="https://www.facebook.com/coobyhq/" class="text-decoration-none" onclick="gaTracking('visit_facebook', 'click', 'clickFacebookBtn')">
                   <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
                 </a>
               </li>
@@ -635,7 +653,7 @@
             </ul>
           </div>
 
-          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0 d-none">
 
             <!-- Heading -->
             <h6 class="font-weight-bold text-uppercase text-primary">
@@ -673,23 +691,22 @@
                 </a>
               </li>
               <li class="mb-3">
-                <a href="https://lin.ee/4WscYE4Cq" class="text-reset">
+                <a href="https://lin.ee/4WscYE4Cq" class="text-reset" target="_blank">
                   Line Us
                 </a>
               </li>
             </ul>
           </div>
           <div class="col-6 col-md-4 col-lg-2">
-
-                <a href="#!" class="text-reset d-inline-block mr-1">
-                  <img src="assets/img/buttons/button-app.png" class="img-fluid" alt="..." style="max-width: 155px;">
+                <a href="https://apps.apple.com/app/id1546272572" class="text-reset d-inline-block mr-1" target="_blank" onclick="gaTracking('visit_app_store', 'click', 'clickAppStoreBtn')">
+                  <img src="./assets/img/buttons/button-app.png" class="img-fluid" alt="..." style="max-width: 155px;">
                 </a>
 
                 <!--<a href="#!" class="text-reset d-inline-block" style="margin-top:10px;">
                   <img src="assets/img/buttons/button-play.png" class="img-fluid" alt="..." style="max-width: 155px;">
                 </a>-->
-            
-              </div>
+
+          </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </footer>
@@ -722,6 +739,26 @@
 
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
+
+    <!-- External Lib -->
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+    <script type="text/javascript">
+        window.__be = window.__be || {};
+        window.__be.id = "60026dc57ad4d00007fa92fe";
+        (function() {
+            var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+            be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+        })();
+
+        window.BE_API = window.BE_API || {};
+
+        function openChatbotWindow() {
+          window.BE_API.openChatWindow();
+        }
+    </script>
+    <!-- End of ChatBot code -->
+
 
 
   </body>

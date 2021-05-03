@@ -14,7 +14,7 @@
         <!-- Social -->
         <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
           <li class="list-inline-item list-social-item mr-3">
-            <a href="https://www.facebook.com/coobytaiwan/" target=”_blank”  class="text-decoration-none">
+            <a href="https://www.facebook.com/coobytaiwan/" target=”_blank”  class="text-decoration-none" onclick="gaTracking('visit_facebook', 'click', 'clickFacebookBtn')">
               <img src="../../assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
             </a>
           </li>
@@ -55,12 +55,12 @@
         <ul class="list-unstyled text-muted mb-0">
           <li class="mb-3">
             <a href="/zh-tw/terms" class="text-reset">
-              使用條款與條件
+              使用者條款
             </a>
           </li>
           <li class="mb-3">
             <a href="/zh-tw/privacy" class="text-reset">
-              隱私權保護政策
+              隱私權政策
             </a>
           </li>
         </ul>
@@ -81,11 +81,22 @@
             </a>
           </li>
           <li class="mb-3">
-            <a href="https://lin.ee/4WscYE4Cq" class="text-reset">
+            <a href="https://lin.ee/4WscYE4Cq" class="text-reset" target="_blank">
               Line 我們
             </a>
           </li>
         </ul>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+
+            <a href="https://apps.apple.com/app/id1546272572" class="text-reset d-inline-block mr-1" target="_blank" onclick="gaTracking('visit_app_store', 'click', 'clickAppStoreBtn')">
+              <img src="../../assets/img/buttons/button-app.png" class="img-fluid" alt="..." style="max-width: 155px;"/>
+            </a>
+
+            <!--<a href="#!" class="text-reset d-inline-block" style="margin-top:10px;">
+              <img src="assets/img/buttons/button-play.png" class="img-fluid" alt="..." style="max-width: 155px;">
+            </a>-->
+
       </div>
     </div> <!-- / .row -->
   </div> <!-- / .container -->

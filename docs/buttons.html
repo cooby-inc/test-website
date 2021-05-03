@@ -9,9 +9,9 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="Landkit" />
-    <meta property="og:image" content="https://cooby.co/assets/img/cooby-app-logo-dark.png">
+    <meta property="og:image" content="https://cooby.co/assets/img/preview-images/meta_tags_eng.jpg" />
     <meta property="og:url" content="https://cooby.co" />
-    <meta property="og:description" content="厭倦商用軟體複雜難解的介面，追求簡單、好用、高效率，我們為保險業務個人設計一套客戶管理系統，Cooby 就如此誕生了。" />
+    <meta property="og:description" content="Find inner peace in your messaging apps. Put your customers at ease." />
 
 
 
@@ -24,15 +24,17 @@
 
       gtag('config', 'UA-58041205-5');
 
-      function signUpTracking(category, label, numeric_value) {
-      gtag('event', "sign_up", {
-      'event_category': category,
-      'event_label': label,
-      'value': numeric_value
-      });
-    }
+      function gaTracking(event_name, category, label, numeric_value) {
+        gtag('event', event_name, {
+        'event_category': category,
+        'event_label': label,
+        'value': numeric_value
+        });
+      }
     </script>
 
+    <!-- JS -->
+    <script src="../assets/js/BZ0/BZ0.js"></script>
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="../assets/fonts/Feather/feather.css">
@@ -541,7 +543,7 @@
           </button>
 
           <!-- Navigation -->
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto" style="margin:auto;">
             <li class="nav-item">
               <a class="nav-link" id="navbarProduct" href="../features.html">
                 Features
@@ -560,7 +562,7 @@
             </li>-->
             <li class="nav-item">
               <a class="nav-link" id="navbarTeam" href="../careers.html">
-                Career
+                Careers
               </a>
             </li>
             <li class="nav-item">
@@ -578,13 +580,28 @@
             </div>
           </li>
           </ul>
+          <ul class="navbar-nav ml-auto" style="margin-right: 1rem;">
+            <li class="nav-item">
+              <a id="signInSignUp"
+                 href="https://cooby.app.link/SqNxlEma8db?utm_content=navbar"
+                 target="_blank"
+                 onclick="gaTracking('log_in', 'click', 'Navbar')"
+                 >
+                Log In
+              </a>
+            </li>
+          </ul>
           <!-- Button -->
-          <div class="ml-auto">
-
-            <a class="navbar-btn btn btn-sm btn-primary lift ml-3" href="../#buy" data-toggle="smooth-scroll">
-              Try Now
+          <div class="text-center pb-md-0 pb-8">
+            <a class="navbar-btn btn btn-sm btn-primary lift"
+               href="https://cooby.app.link/LwlQVmaL6db?utm_content=navbar"
+               data-toggle="smooth-scroll"
+               target="_blank"
+               onclick="gaTracking('sign_up', 'click', 'Navbar')">
+              Sign Up
             </a>
           </div>
+
 
         </div>
 
@@ -1097,6 +1114,26 @@
 
     <!-- Theme JS -->
     <script src="../assets/js/theme.min.js"></script>
+
+    <!-- External Lib -->
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+    <script type="text/javascript">
+        window.__be = window.__be || {};
+        window.__be.id = "60026dc57ad4d00007fa92fe";
+        (function() {
+            var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+            be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+        })();
+
+        window.BE_API = window.BE_API || {};
+
+        function openChatbotWindow() {
+          window.BE_API.openChatWindow();
+        }
+    </script>
+    <!-- End of ChatBot code -->
+
 
 
   </body>
