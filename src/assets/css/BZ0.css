@@ -59,3 +59,11 @@
 
 #BZ0_popup_main_content img {
   margin-bottom: 24px; }
+
+#cooby-insight-btn-and-ps {
+  width: 260px; }
+  @media screen, (max-width: 320px) {
+    #cooby-insight-btn-and-ps {
+      width: 100%;
+      -webkit-box-align: center;
+              align-items: center; } }
