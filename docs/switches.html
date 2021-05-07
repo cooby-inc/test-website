@@ -40,11 +40,12 @@
         if (window.mobileAndTabletCheck()) {
             document.getElementById(BZ0FullscreenId).style.display = 'flex';
         } else {
-            window.location.replace("https://cooby-web-app-staging.herokuapp.com/en/insight");
+            document.getElementById('insight_flow_a').click();
         }
     };
     const closeBZ0Popup = () => {
         document.getElementById(BZ0FullscreenId).style.display = 'none';
+        document.getElementById('insight_flow_a').click();
     }
     window.mobileAndTabletCheck = () => {
         let check = false;
