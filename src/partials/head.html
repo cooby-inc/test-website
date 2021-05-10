@@ -70,9 +70,14 @@ const AmplitudeLog = (label, option) => {
 const BZ0FullscreenId = 'BZ0_popup_if_mobile';
 const onBZ0EntryButtonClick = () => {
     AmplitudeLog('click_visit_insight');
+    const deviceId = amplitude.getInstance().options.deviceId;
     if (window.mobileAndTabletCheck()) {
         document.getElementById(BZ0FullscreenId).style.display = 'flex';
     } else {
+        const baseUrl = 'https://web.cooby.co/en/insight'
+        const urlParams = '?deviceId=' + deviceId
+        document.getElementById('insight_flow_a').setAttribute('href', baseUrl+urlParams);
+        console.log(document.getElementById('insight_flow_a'))
         document.getElementById('insight_flow_a').click();
     }
 };
