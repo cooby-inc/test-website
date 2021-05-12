@@ -61,11 +61,15 @@
 
 <!-- BZ0 JS -->
 <script>
-const getInstance = () => {
-	return (window.amplitude && window.amplitude.getInstance()) || {};
-};
+
 const AmplitudeLog = (label, option) => {
-	getInstance().logEvent(label, option);
+  let entity = (window.amplitude && window.amplitude.getInstance()) || {}; 
+	entity.logEvent(label, option);
+}
+currentURL = window.location.href || "";
+if (currentURL != ""){
+  console.log("Logging URL! " + currentURL);
+  AmplitudeLog("marketing_website_impression", {"Link": currentURL})
 }
 const BZ0FullscreenId = 'BZ0_popup_if_mobile';
 const onBZ0EntryButtonClick = () => {
