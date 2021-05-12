@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+    "pageTitle": "Cooby | Customer Platform Built for Messaging"
+    })
+  </head>
+  <style>
+
+    @media screen and (max-width: 320px){
+      #insight_bz_0 {
+        flex-direction: column-reverse;
+      }
+    }
+  </style>
+  <body class="font-eng">
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light bg-white",
+    "container": "container"
+    })
+
+
+<!-- INSIGHT
+    ================================================== -->
+    <div id="block-background"
+    style="display:none; top:0; left: 0; bottom: 0; right: 0; position: fixed; width: 100%; height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); z-index: 5000; justify-content: center; align-items: center;">
+      <div id='iframe-holder' style="background-color: white;">
+        <iframe src="http://localhost:3000/en/app/report" width="800" height="600"></iframe>
+      </div>
+    </div>
+    <div id='cooby_insight'>
+    <section class="pb-2 pt-12 bg-cooby-light-gray">
+      <div class="container border-bottom-cooby pt-md-4 pb-6">
+        <div id='insight_bz_0' class="row justify-content-center">
+          <div class="col-12 col-md-6 pt-6" data-aos="fade-right">
+            <div id='insight_bz0_slogan'>
+              <h1 class="font-weight-bold">
+                Get your Client Relationship Report for WhatsApp
+              </h1>
+            </div>
+            <div id="try-btn-and-aux-text" class="table-container">
+              <p class="font-size-lg text-muted mb-7">
+                Take a glance of your client conversations on WhatsApp. Understand where and who you spend the most time for. Optimize your efforts to focus on the most important things. </span>
+              </p>
+              <section id='cooby-insight-btn-and-ps'
+                class="d-flex flex-column justify-content-center">
+                <div id='BZ0_entry_button' onclick="onBZ0EntryButtonClick()">
+                  <span
+                    class="btn btn-primary lift mb-3"
+                  >Get Your Free Report Now</span>
+                </div>
+                <div id='BZ0_ps' style="color: #06BF9D; font-size: 12px; text-align: center;">
+                  *No signup required
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="assets/img/illustrations/cooby_insight_trailer.png"
+              alt="..." class="img-fluid mw-100 mw-md-130 mb-6 mb-md-0"
+              data-aos="fade-left">
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <div id='BZ0_popup_if_mobile'>
+        <div id='BZ0_popup_main_content'>
+          <div class='title'>Prepare another device to continue</div>
+          <div class='explain'>If you are currently using the phone with your primary WhatsApp account, please open <span class='url-green'>cooby.co</span> on another device.</div>
+          <div class='explain-img'><img src="@@webRoot/assets/img/illustrations/BZ0IfMobileTutorial.svg"/></div>
+          <div class='got-it-button btn btn-primary lift mb-3' onClick="closeBZ0Popup()">Got it</div>
+        </div>
+      </div>
+      <a id='insight_flow_a' href='https://web.cooby.co/en/insight'></a>
+    </section>
+    </div>
+
+
+    <!-- CURVE
+    ================================================== -->
+    <div class="d-none position-relative mt-n16">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        @@include("assets/img/shapes/curves/curve-2.svg")
+      </div>
+    </div>
+
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="d-none position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+    <!--@@include("partials/footer.html", {
+    "classList": "bg-gray-200"
+    })-->
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+  </body>
+</html>
